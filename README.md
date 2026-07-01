@@ -3,4 +3,4 @@ This repo contains all my published LinkedIn articles. These articles are licens
 
 The URL to the original articles is: https://www.linkedin.com/in/ibrahimhaddad/recent-activity/articles/
 
-Last upodated July 1, 2026.
+Last updated July 1, 2026.
