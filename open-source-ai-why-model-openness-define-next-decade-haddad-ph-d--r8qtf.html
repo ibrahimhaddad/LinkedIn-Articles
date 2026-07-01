@@ -1,0 +1,147 @@
+<html>
+<head>
+  <title>Open Source and AI: Why Model Openness Will Define the Next Decade</title>
+  <style>
+    body {
+      margin: 0 auto;
+      width: 744px;
+      font-family: Source Serif Pro, serif;
+      line-height: 32px;
+      font-weight: 400;
+      color: rgba(0, 0, 0, 0.7);
+      font-size: 21px;
+    }
+    h1, h2, h3 {
+      font-family: Source Sans Pro, Helvetica, Arial, sans-serif;
+    }
+    h1 a, h1 a:visited {
+      color: inherit;
+      text-decoration: none;
+    }
+    h1 {
+      line-height: 48px;
+      font-weight: 600;
+      color: rgba(0, 0, 0, 0.85);
+      font-size: 42px;
+      margin: 32px 0 20px;
+    }
+    h2 {
+      line-height: 32px;
+      font-weight: 600;
+      color: rgba(0, 0, 0, 0.85);
+      font-size: 26px;
+      margin: 28px 0;
+    }
+    h3 {
+      line-height: 28px;
+      font-weight: 600;
+      color: rgba(0, 0, 0, 0.85);
+      font-size: 21px;
+      margin: 24px 0;
+    }
+    p {
+      margin: 32px 0;
+    }
+    .created, .published {
+      color: rgba(0, 0, 0, 0.55);
+      font-size: 15px;
+      line-height: 15px;
+      margin: 20px 0;
+    }
+    .created + .published {
+      margin-top: -12px;
+    }
+    blockquote {
+      font-family: Georgia, Source Serif Pro, serif;
+      font-style: italic;
+      font-size: 24px;
+      line-height: 36px;
+      margin: 48px 120px;
+      text-align: center;
+    }
+    a {
+      word-wrap: break-word;
+      outline: none;
+      text-decoration: none;
+      background-color: transparent;
+      border: 0;
+      color: #008CC9;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    a:visited {
+      color: #8C68CB;
+    }
+    .center {
+      text-align: center;
+    }
+    iframe {
+      display: block;
+      margin: 44px auto;
+    }
+    *:not(pre) + pre, pre:first-of-type {
+      margin-top: 32px;
+      padding-top: 32px;
+    }
+    pre:only-of-type {
+      margin: 32px 0;
+      padding: 32px;
+    }
+    pre {
+      background: #F3F6F8;
+      overflow-x: auto;
+      display: block;
+      font-size: 13px;
+      font-family: monospace;
+      line-height: 13px;
+      padding: 0 32px 32px;
+      white-space: pre;
+    }
+    a.embedded {
+      background: #F3F6F8;
+      display: block;
+      padding: 32px;
+      margin: 32px 0;
+    }
+    img {
+      height: auto;
+      max-width: 100%;
+    }
+    .slate-image-embed__resize-full-width img {
+      width: 100%;
+    }
+    .series-logo {
+      width: 48px;
+      height: 48px;
+      box-sizing: border-box;
+      background-clip: content-box;
+      border: 4px solid transparent;
+      border-radius: 6px;
+      object-fit: scale-down;
+      float: left;
+    }
+    .series-title {
+      font-size: 16px;
+      font-weight: 600;
+      vertical-align: top;
+    }
+    .series-description {
+      color: rgba(0,0,0,.6);
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+    }
+    div {
+      margin: 32px 0;
+    }
+  </style>
+</head>
+<body>
+    <img src="https://media.licdn.com/mediaD4D12AQG3TkQXZUwA7A" alt="Photo by Dylan Patterson on Unsplash" title="Photo by Dylan Patterson on Unsplash" />
+      <h1><a href="https://www.linkedin.com/pulse/open-source-ai-why-model-openness-define-next-decade-haddad-ph-d--r8qtf">Open Source and AI: Why Model Openness Will Define the Next Decade</a></h1>
+    <p class="created">Created on 2025-07-06 11:09</p>
+  <p class="published">Published on 2025-07-08 15:00</p>
+  <div><blockquote><p>This post examines the risks of superficial “openness,” introduces the Model Openness Framework and related community initiatives, and explains how companies can align with emerging standards, licenses, and regulations to foster trust and remain competitive.</p></blockquote><h2>Introduction: Openness in AI Matters </h2><p>Organizations now rely on AI models for a wide range of applications, from language understanding and image recognition to drug discovery and autonomous systems. Yet as their importance grows, so too does the concern over their opacity, the hidden datasets, undisclosed weights, and inscrutable processes that underpin them. For decades, open source software has set the standard for transparency and collaboration in technology. But applying those principles to AI has proved to be far more complicated. Claims of “Open AI” or "Open Source AI" often mask significant gaps in what is disclosed or permitted.</p><p>In the coming decade, the ability to assess and deliver true openness will become a defining competitive and ethical differentiator, especially as emerging regulations put new demands on transparency and accountability. Companies and practitioners who understand and embrace this shift now will be better positioned to lead technologically and reputationally in an AI-driven world. In this post, I will explore why model openness matters, how it can be meaningfully assessed, and what steps companies can take today to align themselves with the open future of AI.</p><h2>The Problem with “Open”</h2><p>In traditional software, “open source” carries a precise meaning: the source code is freely available, modifiable, and distributable under an OSI-approved license (as defined by the <a href="https://opensource.org/osd" target="_blank">Open Source Initiative</a>). AI has complicated this understanding. Many organizations release models they label as “open” or "open source" while withholding critical model elements, such as training datasets, fine-tuning methods, or even instructions on reproducibility. Other organizations apply restrictive licenses that prohibit commercial use or modification, while still using similar marketing tactics and emphasizing the “open” or "open source" nature of the model. This ambiguity carries certain risks:</p><ul><li><p>Developers may unknowingly rely on models that are legally or operationally constrained. </p></li><li><p>Developers cannot effectively build upon models they can’t thoroughly inspect or reproduce.</p></li><li><p>Communities lose trust when “openness” becomes more of a marketing tactic than a reality.</p></li></ul><p>These risks are compounded as regulators begin scrutinizing AI systems more closely. The European Union’s AI Act, for example, explicitly emphasizes transparency, documentation, and traceability for high-risk AI systems. Similar conversations are underway in the U.S., Canada, and other jurisdictions. These developments make clear that companies can no longer afford to treat openness as optional and should consider a structured approach, such as the one proposed by the <a href="https://isitopen.ai/" target="_blank">Model Openness Framework</a>.</p><h2>Introducing the Model Openness Framework (MOF)</h2><p>While serving as Executive Director of the <a href="https://lfaidata.foundation/" target="_blank">LF AI &amp; Data Foundation</a>, I co-created the <strong>Model Openness Framework (MOF)</strong>, a practical methodology for evaluating the true openness of an AI model. The detailed paper is available from <a href="https://arxiv.org/abs/2403.13784" target="_blank">https://arxiv.org/abs/2403.13784</a>. The MOF examines several dimensions of openness, including:</p><ul><li><p><strong>Transparency:</strong> Are the weights, training data, and methods fully disclosed?</p></li><li><p><strong>Reproducibility:</strong> Can others replicate the results using the provided artifacts?</p></li><li><p><strong>Permissiveness:</strong> What does the license allow users to do?</p></li><li><p><strong>Ecosystem Impact:</strong> Does the model enable downstream innovation and contribution?</p></li></ul><p>By applying the MOF, companies can make informed decisions about which models to use or release, under what conditions, and practitioners can hold organizations accountable when claims of openness fall short. For those interested in seeing how models fare today, the community-driven <strong>Model Openness Tool (MOT)</strong> at <a href="https://mot.isitopen.ai/" target="_blank">https://mot.isitopen.ai/</a> provides evaluations of many popular models that went through the MOF evaluation. As more companies turn to the MOF and MOT, a clearer picture of what “open” really means begins to emerge; however, openness also requires a shared set of definitions and principles to support it. Enter the OSAID effort from the Open Source Initiative!</p><h2>Defining “Open Source AI”: An Evolving Effort</h2><p>Recognizing this gap, the Open Source Initiative (OSI), the steward of the original Open Source Definition, has stepped in to help define what openness means in the context of AI. Over the past (almost) two years, OSI has been working with the community to draft an Open Source AI Definition that balances foundational open source values with the realities of AI development. While the work is ongoing, it has already sparked discussions about aligning principles with practice and meeting emerging regulatory expectations regarding transparency and accountability. I’ve contributed to this dialogue through various discussions, and most recently via two essays reflecting on OSI’s effort and its implications for companies and practitioners:</p><ul><li><p><a href="https://www.linkedin.com/pulse/reflections-open-source-ai-definition-mapping-model-haddad-ph-d--kttmf/?trackingId=yj5eZMRRS9%2BWLUMXQ6hp1Q%3D%3D" target="_blank"><em>Reflections on the Open Source AI Definition: Mapping to the Model Openness Framework</em></a>, where I explored how OSI’s draft aligns with MOF dimensions and helps organizations assess openness more rigorously.</p></li><li><p><a href="https://www.linkedin.com/pulse/bridging-principles-pragmatism-reflections-osis-open-ai-ibrahim-woumf/?trackingId=yj5eZMRRS9%2BWLUMXQ6hp1Q%3D%3D" target="_blank"><em>Bridging Principles and Pragmatism: Reflections on OSI’s Open Source AI Definition</em></a>, where I examined the tension between aspirational open source principles and practical business constraints.</p></li></ul><p>These ongoing efforts, coupled with regulatory trends such as the AI Act, underscore the importance of not only assessing openness but also grounding it in a widely understood and enforceable standard. At the same time, new licensing initiatives, such as the OpenMDW license, are emerging to operationalize these ideas in practice. </p><h2>The OpenMDW License: A Step Toward Practical Openness</h2><p>One promising development in this space is the Open Model Development and Weight (OpenMDW) License, introduced by the Linux Foundation. OpenMDW aims to fill a crucial gap by offering a clear, standardized way to license AI models, including their weights, under terms that reflect open source values while addressing the unique realities of AI. OpenMDW allows companies and researchers to release models with greater confidence, knowing they are contributing to an ecosystem governed by transparent, collaborative, and legally sound principles.</p><p>By codifying expectations around model sharing and use, OpenMDW complements efforts such as the MOF, the OSI "open source AI" definition, and regulatory frameworks, providing a concrete tool for organizations that want to operationalize openness rather than just declare it. Companies evaluating their AI strategies should take note: OpenMDW represents a significant step forward, signaling that the open source community is actively adapting to the challenges of AI while staying aligned with global regulatory trends.</p><h2>Why Openness Matters</h2><p>For companies, truly open models offer transparency, auditability, and a stronger grip on their software supply chain, which is vital in regulated industries or mission-critical contexts (ask friends operating in finance, automotive, telecom, or healthcare, among other sectors). For practitioners, openness enables reproducibility, collaboration, and innovation. It democratizes AI, levels the playing field, and fosters a more vibrant and accessible ecosystem. For the broader community, openness encourages trust. When users can inspect, understand, and improve models, everyone benefits, and the field as a whole moves forward faster and more responsibly. However, understanding why openness matters is just the beginning. The question is what to do next.</p><h2>What's Next?</h2><p>The current landscape of AI models is mixed. Some models are being released with increasing transparency and permissiveness, while others continue to obscure critical details behind “open” labels. Over the next few years, companies that embrace true openness, informed by frameworks such as the MOF and the OSAID, and are licensed under OpenMDW, while aligning with regulations like the EU’s AI Act, will differentiate themselves, strengthen their ecosystems, and reduce legal and reputational risks. Companies that don’t follow that approach will risk falling behind. What that means specifically from a technical and ethical perspective is yet to be seen and is a great discussion topic. </p><p>Regardless, organizations should start today by:</p><ul><li><p>Evaluating their models against the MOF principles.</p></li><li><p>Demanding transparency from vendors and partners.</p></li><li><p>Contributing to community efforts like the Model Openness Tool, the OSI’s OSAID, and adopting clear licensing standards like OpenMDW.</p></li><li><p>Preparing for the increasing scrutiny from regulators who now view transparency, traceability, and accountability as minimum requirements for deploying AI responsibly.</p></li></ul><p>These are just starting points, and I am sure there are other actions that organizations can start taking (please drop your ideas in the comments!).</p><h2>Closing Thoughts</h2><p>AI models represent more than just code. They encode decisions, data, values, and knowledge, and treating them as black boxes is not a sustainable or an appropriate approach given the various complexities. The next chapter of AI will be written by those who choose transparency over opacity, collaboration over control, and community over self-interest. Openness has been the foundation of the software revolution. The open source "movement" or "methodology" is an excellent testament to that. If we want AI to reach its full potential and do so responsibly, openness must become the foundation of the AI revolution.</p><h2>References</h2><ul><li><p><a href="https://mot.isitopen.ai/" target="_blank">Model Openness Framework (MOF) and Model Openness Tool (MOT)</a></p></li><li><p><a href="https://openmdw.ai/" target="_blank">Linux Foundation: Open Model Development and Weight (OpenMDW) License</a></p></li><li><p><a href="https://artificialintelligenceact.eu/" target="_blank">European Commission: AI Act — Proposal for a Regulation Laying Down Harmonised Rules on Artificial Intelligence (Artificial Intelligence Act)</a></p></li><li><p><a href="https://www.whitehouse.gov/briefing-room/statements-releases/2023/10/30/fact-sheet-president-biden-issues-executive-order-on-safe-secure-and-trustworthy-artificial-intelligence/" target="_blank">U.S. Executive Order on Safe, Secure, and Trustworthy AI</a> </p></li><li><p><a href="https://opensource.org/osd" target="_blank">The Open Source Definition (OSI)</a> </p></li><li><p><a href="https://oecd.ai/en/dashboards/principles" target="_blank">OECD: Principles on Artificial Intelligence (2019)</a> </p></li></ul><h2>About the author</h2><p>Dr. Ibrahim Haddad leads the Infotainment Engineering Group at Volvo Cars. He previously served as Vice President of Strategic Programs (AI) at the Linux Foundation, where he was the Executive Director of LF AI &amp; Data and the Founding Executive Director of the PyTorch Foundation. Previously, Dr. Haddad served as Vice President of R&amp;D and a Distinguished Engineer at Samsung Research. His career spans technical and portfolio leadership roles at Ericsson Research, the Open Source Development Labs, Motorola, Palm, and Hewlett-Packard. (<a href="https://www.linkedin.com/in/ibrahimhaddad/" target="_blank"><strong>LinkedIn</strong></a> - <a href="https://ibrahimatlinux.com/" target="_blank"><strong>Website</strong></a>)</p></div>
+</body>
+</html>

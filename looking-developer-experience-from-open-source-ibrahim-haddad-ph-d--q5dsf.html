@@ -1,0 +1,147 @@
+<html>
+<head>
+  <title>Looking at Developer Experience from an Open Source Perspective</title>
+  <style>
+    body {
+      margin: 0 auto;
+      width: 744px;
+      font-family: Source Serif Pro, serif;
+      line-height: 32px;
+      font-weight: 400;
+      color: rgba(0, 0, 0, 0.7);
+      font-size: 21px;
+    }
+    h1, h2, h3 {
+      font-family: Source Sans Pro, Helvetica, Arial, sans-serif;
+    }
+    h1 a, h1 a:visited {
+      color: inherit;
+      text-decoration: none;
+    }
+    h1 {
+      line-height: 48px;
+      font-weight: 600;
+      color: rgba(0, 0, 0, 0.85);
+      font-size: 42px;
+      margin: 32px 0 20px;
+    }
+    h2 {
+      line-height: 32px;
+      font-weight: 600;
+      color: rgba(0, 0, 0, 0.85);
+      font-size: 26px;
+      margin: 28px 0;
+    }
+    h3 {
+      line-height: 28px;
+      font-weight: 600;
+      color: rgba(0, 0, 0, 0.85);
+      font-size: 21px;
+      margin: 24px 0;
+    }
+    p {
+      margin: 32px 0;
+    }
+    .created, .published {
+      color: rgba(0, 0, 0, 0.55);
+      font-size: 15px;
+      line-height: 15px;
+      margin: 20px 0;
+    }
+    .created + .published {
+      margin-top: -12px;
+    }
+    blockquote {
+      font-family: Georgia, Source Serif Pro, serif;
+      font-style: italic;
+      font-size: 24px;
+      line-height: 36px;
+      margin: 48px 120px;
+      text-align: center;
+    }
+    a {
+      word-wrap: break-word;
+      outline: none;
+      text-decoration: none;
+      background-color: transparent;
+      border: 0;
+      color: #008CC9;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    a:visited {
+      color: #8C68CB;
+    }
+    .center {
+      text-align: center;
+    }
+    iframe {
+      display: block;
+      margin: 44px auto;
+    }
+    *:not(pre) + pre, pre:first-of-type {
+      margin-top: 32px;
+      padding-top: 32px;
+    }
+    pre:only-of-type {
+      margin: 32px 0;
+      padding: 32px;
+    }
+    pre {
+      background: #F3F6F8;
+      overflow-x: auto;
+      display: block;
+      font-size: 13px;
+      font-family: monospace;
+      line-height: 13px;
+      padding: 0 32px 32px;
+      white-space: pre;
+    }
+    a.embedded {
+      background: #F3F6F8;
+      display: block;
+      padding: 32px;
+      margin: 32px 0;
+    }
+    img {
+      height: auto;
+      max-width: 100%;
+    }
+    .slate-image-embed__resize-full-width img {
+      width: 100%;
+    }
+    .series-logo {
+      width: 48px;
+      height: 48px;
+      box-sizing: border-box;
+      background-clip: content-box;
+      border: 4px solid transparent;
+      border-radius: 6px;
+      object-fit: scale-down;
+      float: left;
+    }
+    .series-title {
+      font-size: 16px;
+      font-weight: 600;
+      vertical-align: top;
+    }
+    .series-description {
+      color: rgba(0,0,0,.6);
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+    }
+    div {
+      margin: 32px 0;
+    }
+  </style>
+</head>
+<body>
+    <img src="https://media.licdn.com/mediaD4D12AQEkmp9bPqLMtA" alt="Photo by Shamin Haky on Unsplash" title="Photo by Shamin Haky on Unsplash" />
+      <h1><a href="https://www.linkedin.com/pulse/looking-developer-experience-from-open-source-ibrahim-haddad-ph-d--q5dsf">Looking at Developer Experience from an Open Source Perspective</a></h1>
+    <p class="created">Created on 2025-09-05 06:28</p>
+  <p class="published">Published on 2025-09-05 15:30</p>
+  <div><h2>Introduction </h2><p>While much focus on Developer Experience (DevEx) evolves on internal engineering teams, a critical and often undervalued dimension is the experience of external developers (including open source developers). These are the partners, customers, and contributors building with your SDKs, APIs, and open source projects. Their success directly dictates your technology's adoption, reputation, and ecosystem vitality. Therefore, investing in external DevEx is a strategic decision for growth and platform stickiness (too many buzzwords!). </p><blockquote><p>Whether your goal is to grow a developer community, drive API adoption, or enable third-party collaboration and innovation, a frictionless, developer-centric experience is critical to achieving your goal.</p></blockquote><h2>Common Challenges</h2><p>External developers face a unique set of obstacles that can stifle engagement before it even begins. The first step is to recognize these pain points so you can address and resolve them.  </p><p>What are the most common challenges faced by external developers?</p><ul><li><p><strong>Inconsistent or Incomplete Documentation:</strong> Outdated, unclear, or missing documentation remains the most significant barrier to entry. Developers need clear, example-driven guides to find success.</p></li><li><p><strong>Complex Onboarding:</strong> If achieving a "Hello World" outcome takes more than a few minutes, frustration sets in. A short and smooth Time to First Success (TTFS) is non-negotiable.</p></li><li><p><strong>Lack of Transparency:</strong> In open source contexts, opaque roadmaps and unclear governance models deter potential contributors from investing their time and effort.</p></li><li><p><strong>Poor Support &amp; Slow Feedback:</strong> Unanswered GitHub issues, stalled pull requests, and ignored forum posts erode trust and signal a lack of community care.</p></li><li><p><strong>Authentication and Integration Hurdles:</strong> Complex auth flows and excessive setup steps create immediate friction, increasing drop-off rates during initial exploration.</p></li><li><p><strong>Fragmented Community Channels:</strong> A sprawl of disconnected platforms (Slack, Discord, Discourse, etc.) without a clear purpose or active moderation leads to confusion and ineffective support.</p></li></ul><h2>Key Metrics for External DevEx</h2><p>To understand the external developer's journey, we need to track metrics that serve as signals of health or friction. There are some key indicators that we can use for that purpose:</p><ul><li><p><strong>Time to First "Hello World":</strong> The gold standard for onboarding simplicity. </p></li><li><p><strong>Documentation Satisfaction Score:</strong> Measured via surveys or embedded feedback widgets.</p></li><li><p><strong>Issue Response Time:</strong> The average time to a first response on GitHub issues or support channels.</p></li><li><p><strong>Pull Request Merge Time:</strong> Measures the efficiency and welcome of your contribution process.</p></li><li><p><strong>Onboarding Completion Rate:</strong> The percentage of developers who finish your tutorials or quickstarts.</p></li><li><p><strong>API/SDK Churn Rate:</strong> How many developers stop using your tools after initial interest?</p></li><li><p><strong>Community Growth &amp; Engagement Rate:</strong> Active participation in forums and discussions.</p></li><li><p><strong>Contributor Retention:</strong> The percentage of contributors who return after their first merged PR.</p></li></ul><h2>Improving External DevEx: Practical Recommendations</h2><p>Addressing these challenges requires a deliberate and practical approach. In this section, I share a framework comprising six pillars for building a world-class experience that elevates your external DevEx and transforms friction into flow. The framework consists of the following pillars:</p><ul><li><p>Architect a seamless developer journey</p></li><li><p>Create fast and reliable feedback loops </p></li><li><p>Reduce friction</p></li><li><p>Documentation is a product</p></li><li><p>Foster trust and loyalty</p></li><li><p>Appoint a dedicated DevEx owner</p></li></ul><p>Next, let's explore each of the pillars.</p><h3>1. Architect a Seamless Developer Journey </h3><p>The developer experience begins at discovery. You need to map every touchpoint, from the first website visit to the first successful contribution, and strive to make it intuitive. That includes:</p><ul><li><p>Providing clear landing pages with calls-to-action like "Get Started" or "Try it Now."</p></li><li><p>Investing in multi-format guides such as quickstart templates, video walkthroughs, and interactive tutorials.</p></li><li><p>Offering language-specific SDKs and prebuilt integrations to abstract away complexity.</p></li><li><p>Embedding contextual help directly in onboarding workflows, CLIs, and API explorers.</p></li></ul><h3>2. Create Fast and Reliable Feedback Loops </h3><p>Developers need to know their voice is heard, whether they're asking a question or submitting a bug fix. How can you enable fast and reliable feedback loops?</p><ul><li><p>Set and publish internal SLAs for responding to GitHub issues and reviewing PRs.</p></li><li><p>Leverage dedicated channels like GitHub Discussions or Discord to route questions efficiently.</p></li><li><p>Empower developer advocates to act as bridges between the community and internal teams.</p></li><li><p>Publish regular release notes and changelogs that acknowledge community contributions.</p></li></ul><h3>3. Reduce Friction </h3><p>Friction is the silent killer of adoption. You should proactively seek out and eliminate small barriers that accumulate into major frustrations. Here are some recommendations to support this goal:</p><ul><li><p>"Dogfood" your own onboarding by regularly testing the process from a new user's perspective.</p></li><li><p>Use telemetry to identify precisely where developers drop off.</p></li><li><p>Simplify authentication and provide sandboxed test environments for safe experimentation.</p></li><li><p>Standardize error messages to be human-readable and include links to relevant documentation.</p></li></ul><h3>4. Treat Documentation as a Product </h3><p>Your documentation is your most scalable support engineer. You can invest in documentation with the same rigor as your core codebase. </p><ul><li><p>Make docs accessible, searchable, and open to contributions via pull requests. </p></li><li><p>Include runnable code snippets and "copy" buttons to accelerate development.</p></li><li><p>Version examples and ensure they are tested alongside code releases.</p></li><li><p>Track doc satisfaction with simple feedback mechanisms and analytics.</p></li></ul><h3>5. Foster Trust &amp; Loyalty </h3><p>Exceptional DevEx is both technical and relational. Make developers feel valued, and they will become your greatest advocates. In practical terms, you can consider implementing these practices:</p><ul><li><p>Highlight community contributors in newsletters, blogs, and release notes.</p></li><li><p>Be transparent about your roadmap and the reasoning behind key decisions.</p></li><li><p>Host events, hackathons, office hours, and AMAs to create authentic connections.</p></li></ul><h3>6. Empower a Dedicated DevEx Owner </h3><p>External DevEx often fails because it's everyone's problem and no one's job. It's important to designate an owner for DevEx.</p><ul><li><p>Form a cross-functional team (Engineering, DevRel, Product, Docs) to own the developer's end-to-end journey.</p></li><li><p>Map the developer lifecycle and set clear OKRs based on the metrics above.</p></li><li><p>Champion the developer as the core customer in internal product discussions.</p></li></ul><blockquote><p>Implementing these six pillars transforms external developer experience from a source of friction into a powerful growth engine, driving adoption, fostering loyalty, and building a sustainable ecosystem.</p></blockquote><h2>Final Thoughts</h2><p>Investing in external Developer Experience is a powerful multiplier. It accelerates adoption, deepens ecosystem loyalty, and builds a sustainable competitive advantage. By minimizing friction and maximizing clarity, you create a thriving community where everyone succeeds together.</p><blockquote><p>When external developers succeed with your tools, APIs, or projects, your whole ecosystem wins.</p></blockquote><h2>Prior Posts</h2><p>I have previously posted extensively on LinkedIn on the topic of DevEx, which you can find <a href="https://www.linkedin.com/posts/ibrahimhaddad_developerexperience-devex-developerproductivity-activity-7335311734812913664-tJiP?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAAAAnyZsBsldvsJ_ICcqAZ2KacC6Yjb_QphE" target="_blank"><strong>here</strong></a>.</p><h2>About the Author</h2><p>Dr. Ibrahim Haddad is Head of Infotainment at Volvo Cars. He previously served as Vice President of Strategic Programs at the Linux Foundation, where he was Executive Director of LF AI &amp; Data and the founding Executive Director of the PyTorch Foundation. In these roles, he led global open source AI initiatives, scaling ecosystems, strengthening governance, and driving cross-industry collaboration among leading technology companies. Earlier, Dr. Haddad served as Vice President of R&amp;D and Distinguished Engineer at Samsung Research. Throughout his career, he has held technical and leadership positions at Ericsson Research, Motorola, Palm, HP, and the Open Source Development Labs. He earned a Ph.D. in Computer Science from Concordia University (Montreal, Canada) and has lived and worked across North America, Europe, and Asia. (LinkedIn, Website)</p></div>
+</body>
+</html>

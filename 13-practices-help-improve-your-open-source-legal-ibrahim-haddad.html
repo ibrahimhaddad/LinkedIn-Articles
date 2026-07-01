@@ -1,0 +1,147 @@
+<html>
+<head>
+  <title>13 Practices to Help Improve Your Open Source Legal Compliance </title>
+  <style>
+    body {
+      margin: 0 auto;
+      width: 744px;
+      font-family: Source Serif Pro, serif;
+      line-height: 32px;
+      font-weight: 400;
+      color: rgba(0, 0, 0, 0.7);
+      font-size: 21px;
+    }
+    h1, h2, h3 {
+      font-family: Source Sans Pro, Helvetica, Arial, sans-serif;
+    }
+    h1 a, h1 a:visited {
+      color: inherit;
+      text-decoration: none;
+    }
+    h1 {
+      line-height: 48px;
+      font-weight: 600;
+      color: rgba(0, 0, 0, 0.85);
+      font-size: 42px;
+      margin: 32px 0 20px;
+    }
+    h2 {
+      line-height: 32px;
+      font-weight: 600;
+      color: rgba(0, 0, 0, 0.85);
+      font-size: 26px;
+      margin: 28px 0;
+    }
+    h3 {
+      line-height: 28px;
+      font-weight: 600;
+      color: rgba(0, 0, 0, 0.85);
+      font-size: 21px;
+      margin: 24px 0;
+    }
+    p {
+      margin: 32px 0;
+    }
+    .created, .published {
+      color: rgba(0, 0, 0, 0.55);
+      font-size: 15px;
+      line-height: 15px;
+      margin: 20px 0;
+    }
+    .created + .published {
+      margin-top: -12px;
+    }
+    blockquote {
+      font-family: Georgia, Source Serif Pro, serif;
+      font-style: italic;
+      font-size: 24px;
+      line-height: 36px;
+      margin: 48px 120px;
+      text-align: center;
+    }
+    a {
+      word-wrap: break-word;
+      outline: none;
+      text-decoration: none;
+      background-color: transparent;
+      border: 0;
+      color: #008CC9;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    a:visited {
+      color: #8C68CB;
+    }
+    .center {
+      text-align: center;
+    }
+    iframe {
+      display: block;
+      margin: 44px auto;
+    }
+    *:not(pre) + pre, pre:first-of-type {
+      margin-top: 32px;
+      padding-top: 32px;
+    }
+    pre:only-of-type {
+      margin: 32px 0;
+      padding: 32px;
+    }
+    pre {
+      background: #F3F6F8;
+      overflow-x: auto;
+      display: block;
+      font-size: 13px;
+      font-family: monospace;
+      line-height: 13px;
+      padding: 0 32px 32px;
+      white-space: pre;
+    }
+    a.embedded {
+      background: #F3F6F8;
+      display: block;
+      padding: 32px;
+      margin: 32px 0;
+    }
+    img {
+      height: auto;
+      max-width: 100%;
+    }
+    .slate-image-embed__resize-full-width img {
+      width: 100%;
+    }
+    .series-logo {
+      width: 48px;
+      height: 48px;
+      box-sizing: border-box;
+      background-clip: content-box;
+      border: 4px solid transparent;
+      border-radius: 6px;
+      object-fit: scale-down;
+      float: left;
+    }
+    .series-title {
+      font-size: 16px;
+      font-weight: 600;
+      vertical-align: top;
+    }
+    .series-description {
+      color: rgba(0,0,0,.6);
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+    }
+    div {
+      margin: 32px 0;
+    }
+  </style>
+</head>
+<body>
+    <img src="https://media.licdn.com/mediaC4E12AQE9u-jSG_QJgA" alt="" title="" />
+      <h1><a href="https://www.linkedin.com/pulse/13-practices-help-improve-your-open-source-legal-ibrahim-haddad">13 Practices to Help Improve Your Open Source Legal Compliance </a></h1>
+    <p class="created">Created on 2021-08-03 13:55</p>
+  <p class="published">Published on 2021-08-03 17:34</p>
+  <div><p>This post offers general recommendations related to open source compliance practices. For a detailed discussion on building and managing open source compliance programs please refer to the resources section at the end of this post. It is important to know that every organization is different, has their own custom policy, guidelines and processes. Therefore, it is expected that some of these recommendations may not exactly fit your current compliance framework but can be used as possible ideas for improvements. </p><h2><strong>1. Identify all Source Code&nbsp;</strong></h2><p>Software enters an organization via three main sources: source code introduced by an organization's own developers, source code coming via third party commercial software providers, and open source channels such as GitHub.&nbsp;It is recommended that all source code used in any given product or service go through the compliance process in which an organization is able to identify the origin and license of the source code and set up a plan to meet the obligations of all applicable licenses.</p><h2><strong>2. Establish a Recurring Scanning Model</strong></h2><p>Organizations adopt various methods to manage approvals to use open source. The tendency has been to be as efficient as possible with these approvals given the massive adoption of open source software. Some organizations require developers to request a formal approval to use open source code and are only allowed to check in the code into the product repo once approval is granted. In some cases, developers, in the rush of getting work done, may not issue a compliance ticket to request approval to use the needed open source code.&nbsp;Therefore, it is critical to have an additional checkpoint or a method that captures unapproved open source code that is entering the software stack. This situation can be resolved by running regular full scans for the full software stack every <em>x</em> weeks (depending on the speed of development) and identifying components that don’t have a corresponding compliance ticket. A new compliance ticket will then be created per component and pushed via the normal compliance verification process.</p><h2><strong>3. Verify Compliance on a Case-by-Case Basis&nbsp;</strong></h2><p>Approving the use of open source software in one case does not necessarily serve for all cases. Compliance issues may arise depending on the context of use of a specific component and how it interacts with other components licensed under different licenses (open source or proprietary).&nbsp; It is recommended that each time developers modify a previously approved open source component or plan to use a previously approved component, a new scan is run. The result will be a new bill of material, a confirmation of licenses, and an approval of use in the new context.&nbsp;</p><h2><strong>4. Verify Licenses When Upgrading Versions of Open Source Components</strong></h2><p>License changes in open source components may occur between major version upgrades. When developers upgrade versions of open source components, it is recommended that they verify the license. If there is a change in the license, a new compliance ticket may need to be created requesting approval to use the new version of the open source component licensed now under a different license.&nbsp;</p><h2><strong>5. Resolve Compliance Issues Flagged by Software Composition Analysis Tools&nbsp;</strong></h2><p>When a source code scanner is run on the code base, the output may include certain flags pointing to possible issues as identified based on the rules and policies configured in the SCA tool.&nbsp;When these flags are confirmed as a real issue, it is recommended to work with the developers to resolve the issue, run a new scan after the resolution, and generate a new bill of material based on the updated source code.</p><h2><strong>6. Save all Licensing Information</strong></h2><p>In preparation for the legal review in relation to the use of open source components, it is recommended to save all related licensing information such as COPYING, README, or LICENSE files available in the repo. Many organizations require that such files are attached to the compliance ticket of the specific open source component to provide reviewers of the ticket all the information needed to make a proper evaluation of the compliance status.&nbsp;</p><h2><strong>7. Maintain a Record of Discussion</strong></h2><p>Following on the previous practice (saving licensing information), it is recommended to maintain a summary of discussions in the compliance ticket that lead to the approval or rejection of a specific open source component. Such documentation can prove very useful when attempting to determine the basis on which approval for a specific component was granted and how possible issues were resolved.</p><h2><strong>8.  Provide a Written Offer</strong></h2><p>The written offer is an essential building block of a successful compliance effort. Certain open source licenses require that the recipients of the software are notified of various license information and have access to the source code.&nbsp;It is recommended to use clear language and be inclusive of all open source software included in the product or service. Organizations often try to make it easy to locate this information (written offer and open source licensing information) on the product itself, in the product documentation, and/or on a website (the location varies depending on the product or service).&nbsp;</p><h2><strong>9. Manage Modifications to Open Source Software</strong></h2><p>It is recommended that all modifications to open source code is captured in the revision history (change log file).&nbsp; When redistributing modified code, depending on the license in effect, your modifications need to be clearly marked as such.&nbsp;Some companies elect a different and a more efficient approach by providing the original open source code along with the company’s contributed patch file that applies against the original open source package. Following this approach, the company’s modifications are clearly separated and identifiable from the original open source package.&nbsp;</p><h2><strong>10. Pay Attention to Retired Components</strong></h2><p>In some instances, a previously approved open source component may no longer be in use anymore. When faced with such a scenario, it is recommended that developers re-open the corresponding compliance ticket and update it to reflect that the component has been retired with details in relation to the build number and specific use information. This action will trigger the update of the open source license information provided to the users of the product or service.&nbsp;</p><h2><strong>11. Avoid Copy/Paste</strong></h2><p>Developers must avoid copying and pasting open source code into proprietary or third party source code (or vice versa) without prior documented approval. Such actions can have serious implications on license compliance.</p><h2><strong>12. Avoid Mixing Source Code with Different Licenses</strong></h2><p>Following the previous note on avoiding copy/paste without approval, it is recommended to avoid mixing code incoming under different licenses without proper approval. Some open source licenses are incompatible with one another and many are not compatible with proprietary licenses. It is therefore highly recommended to seek support from your legal counsel and receive approval to mix source code licensed under different licenses.</p><h2><strong>13. Preserve Original License Information</strong></h2><p>It is highly recommended not to remove or in any way disturb existing copyrights, attribution and licensing information in any open source component.&nbsp;</p><h2><strong>Closing</strong></h2><p>It is widely acknowledged that open source is a great vehicle for innovation allowing organizations to share R&amp;D efforts and build common and enabling base technologies. There is, however, the obligation of being respectful to the licenses under which open source is released. In this post, we shared some practices in relation to ensuring  license compliance when using open source in products or services. We hope you find it useful and helpful to your compliance efforts. Thank you for reading!</p><h2>Resources</h2><ol><li><a href="https://www.ibrahimatlinux.com/uploads/6/3/9/7/6397792/an_open_guide_to_evaluating_software_composition_analysis_tools_v2.pdf" target="_blank">An Open Guide to Evaluating Software Composition Tools</a><strong>&nbsp;</strong>(11/2020)</li><li><a href="https://www.ibrahimatlinux.com/uploads/6/3/9/7/6397792/compliancepractices_ebook_final.pdf" target="_blank"><strong>Recommended Open Source Compliance Practices for the Enterprise</strong></a>&nbsp;(04/2019)&nbsp;</li><li><a href="https://www.linuxfoundation.org/open-source-management/2019/03/assessment-open-source-practices/" target="_blank"><strong>Assessment of Open Source Practices as Part of M&amp;A Transaction Due Diligence</strong></a>&nbsp;(03/2019)</li><li><a href="https://www.linuxfoundation.org/compliance-and-security/2018/12/open-source-compliance-in-the-enterprise/" target="_blank"><strong>Open Source Compliance in the Enterprise, 2nd Ed.</strong></a>&nbsp;(12/2018)&nbsp;</li><li><a href="https://www.linuxfoundation.org/open-source-management/2018/08/enterprise-open-source-practical-introduction/" target="_blank"><strong>Enterprise Open Source: A Practical Introduction</strong></a><strong>&nbsp;</strong>(08/2018)&nbsp;</li><li><a href="https://www.linuxfoundation.org/publications/2018/05/open-source-ai-projects-insights-and-trends/" target="_blank"><strong>Open Source AI: Projects, Insights and Trends</strong></a>&nbsp;(05/2018)</li><li><a href="https://www.linuxfoundation.org/resources/open-source-audits-merger-acquisition-transactions/" target="_blank"><strong>Open Source Audits in Merger and Acquisition Transactions</strong></a><strong>&nbsp;</strong>(Also available in&nbsp;<a href="https://www.ibrahimatlinux.com/uploads/6/3/9/7/6397792/opensource-m_a-jp.pdf" target="_blank"><strong>Japanese</strong></a>&nbsp;- 02/2018)</li></ol><h2>Disclaimer</h2><p>I am not a counsel and nothing in this post can be considered legal advice. This post represents my own opinions and not those of my current or any of my previous employers. </p></div>
+</body>
+</html>

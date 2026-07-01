@@ -1,0 +1,149 @@
+<html>
+<head>
+  <title>Reflections on AI Coding Assistants and Open Source Snippets</title>
+  <style>
+    body {
+      margin: 0 auto;
+      width: 744px;
+      font-family: Source Serif Pro, serif;
+      line-height: 32px;
+      font-weight: 400;
+      color: rgba(0, 0, 0, 0.7);
+      font-size: 21px;
+    }
+    h1, h2, h3 {
+      font-family: Source Sans Pro, Helvetica, Arial, sans-serif;
+    }
+    h1 a, h1 a:visited {
+      color: inherit;
+      text-decoration: none;
+    }
+    h1 {
+      line-height: 48px;
+      font-weight: 600;
+      color: rgba(0, 0, 0, 0.85);
+      font-size: 42px;
+      margin: 32px 0 20px;
+    }
+    h2 {
+      line-height: 32px;
+      font-weight: 600;
+      color: rgba(0, 0, 0, 0.85);
+      font-size: 26px;
+      margin: 28px 0;
+    }
+    h3 {
+      line-height: 28px;
+      font-weight: 600;
+      color: rgba(0, 0, 0, 0.85);
+      font-size: 21px;
+      margin: 24px 0;
+    }
+    p {
+      margin: 32px 0;
+    }
+    .created, .published {
+      color: rgba(0, 0, 0, 0.55);
+      font-size: 15px;
+      line-height: 15px;
+      margin: 20px 0;
+    }
+    .created + .published {
+      margin-top: -12px;
+    }
+    blockquote {
+      font-family: Georgia, Source Serif Pro, serif;
+      font-style: italic;
+      font-size: 24px;
+      line-height: 36px;
+      margin: 48px 120px;
+      text-align: center;
+    }
+    a {
+      word-wrap: break-word;
+      outline: none;
+      text-decoration: none;
+      background-color: transparent;
+      border: 0;
+      color: #008CC9;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    a:visited {
+      color: #8C68CB;
+    }
+    .center {
+      text-align: center;
+    }
+    iframe {
+      display: block;
+      margin: 44px auto;
+    }
+    *:not(pre) + pre, pre:first-of-type {
+      margin-top: 32px;
+      padding-top: 32px;
+    }
+    pre:only-of-type {
+      margin: 32px 0;
+      padding: 32px;
+    }
+    pre {
+      background: #F3F6F8;
+      overflow-x: auto;
+      display: block;
+      font-size: 13px;
+      font-family: monospace;
+      line-height: 13px;
+      padding: 0 32px 32px;
+      white-space: pre;
+    }
+    a.embedded {
+      background: #F3F6F8;
+      display: block;
+      padding: 32px;
+      margin: 32px 0;
+    }
+    img {
+      height: auto;
+      max-width: 100%;
+    }
+    .slate-image-embed__resize-full-width img {
+      width: 100%;
+    }
+    .series-logo {
+      width: 48px;
+      height: 48px;
+      box-sizing: border-box;
+      background-clip: content-box;
+      border: 4px solid transparent;
+      border-radius: 6px;
+      object-fit: scale-down;
+      float: left;
+    }
+    .series-title {
+      font-size: 16px;
+      font-weight: 600;
+      vertical-align: top;
+    }
+    .series-description {
+      color: rgba(0,0,0,.6);
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+    }
+    div {
+      margin: 32px 0;
+    }
+  </style>
+</head>
+<body>
+    <img src="https://media.licdn.com/mediaD4D12AQGNr9RLlSPb9A" alt="Photo by Rahul Mishra on Unsplash
+" title="Photo by Rahul Mishra on Unsplash
+" />
+      <h1><a href="https://www.linkedin.com/pulse/reflections-ai-coding-assistants-open-source-snippets-haddad-ph-d--caucf">Reflections on AI Coding Assistants and Open Source Snippets</a></h1>
+    <p class="created">Created on 2025-04-23 07:08</p>
+  <p class="published">Published on 2025-06-05 15:00</p>
+  <div><p>AI coding assistants have quickly become trusted sidekicks for today’s developers. They help us write code faster, reduce repetitive tasks, and unlock creative solutions (or quick and dirty hacks) in record time. But like any powerful new tool, they come with responsibilities, especially in relation to security and license compliance.</p><p>One of the biggest concerns? AI-generated code can sometimes include fragments of third-party or open-source software. If these fragments aren’t properly attributed or vetted, development teams could face license conflicts, intellectual property risks, or even unknowingly introduce vulnerabilities into their codebase. </p><p>The good news? You don’t have to slow down to stay safe. With the right approach and tools, it’s possible to keep moving fast and staying compliant. Let’s break down how.</p><h2>The Risk Beneath the Surface</h2><p>Most AI coding tools are trained on massive datasets comprised of publicly available code, including open source projects. That means there’s always a chance the code they generate or provide (generate <strong>≄ </strong>provide) snippets from open source software and sencondly, that code could also be governed by licenses that may not be compatible with your own (wherever repo they're ending up in). </p><p>This raises a challenge: How can you keep innovating at speed, without stepping into legal or security trouble? Security, you may ask? Yes, if the code embeds a security vulnerability, then it is yours now. </p><h2>Not All Snippet Detection Is Created Equal</h2><p>Many Software Composition Analysis (SCA) tools claim to detect open source components, but when it comes to AI-generated code, especially small code fragments or snippets, the quality of detection matters and differs from one tool to another.</p><p>Effective snippet detection hinges on three key capabilities:</p><ul><li><p><strong>Breadth</strong>: Can the tool scan all the code your team writes, across every programming language, framework, and build system?</p></li><li><p><strong>Depth</strong>: Can it catch modified or partial snippets? AI rarely spits out exact copies, so fuzzy matching is critical.</p></li><li><p><strong>Insight</strong>: Once the tool finds a match, can it tell you the license type, where the code originated from, and whether it contains any known security vulnerability?</p></li></ul><p>It’s not just about finding issues. Developers and compliance teams need rich, actionable information to respond quickly and confidently. The more intelligent the detection, the easier it is to manage the fallout and follow the remediation process.</p><h2>Shift-Left the Smart Way</h2><p>Shift-left is about moving security and compliance checks earlier in the development cycle, ideally while the code is still being written. Integrating snippet detection into your developer workflows and CI/CD pipelines helps teams catch problems in real time. No more context switching or late-stage surprises. Developers can act on issues immediately, often fixing them before they leave their IDE. This shift-left approach has the advantage of reducing the need for large compliance review teams; every developer can be a part-time compliance engineer, taking care of the code they produce and integrate. When detection tools are baked into the dev process, every developer becomes part of the solution, leading to a culture where secure, compliant coding is just part of how things get done.</p><h2>Clarity of Roles and Responsibilities</h2><p>Every company structures open source risk management differently. Some organizations rely on dedicated Open Source Program Offices (OSPOs) to drive compliance efforts, while others embed those responsibilities into engineering or DevOps teams.</p><p>Regardless of the structure, clear accountability is a must:</p><ul><li><p>Who runs the scans? </p></li><li><p>How often?&nbsp;</p></li><li><p>Who triages results?&nbsp;</p></li><li><p>What triggers an escalation?&nbsp;</p></li><li><p>Who decides what gets merged or needs replacement?&nbsp;</p></li><li><p>Who creates and assigns tickets to fix encountered issues?</p></li><li><p>Who generates the SBOM? </p></li><li><p>Etc. </p></li></ul><p>Without clear answers, it’s easy for things to slip through the cracks. The best setups give all stakeholders visibility through shared dashboards and timely reports. When everyone can see what’s happening and why, decision-making becomes faster and more collaborative.</p><h2>Be Proactive</h2><p>The rise of AI-assisted development is also transforming the role of compliance teams and OSPOs. It’s no longer just about reviewing code at the end, it’s about spotting patterns, anticipating risks, and building systems to deal with them early. That might mean setting up regular AI code audits, adding snippet detection to your standard SCA tools, keeping an eye on high-risk licenses, or working closely with legal teams to establish boundaries around reuse.</p><p>Some companies are even experimenting with hybrid OSPO models, blending internal resources with outside expertise. Whatever the setup, the trend is clear: Compliance is shifting from a gatekeeper role to a trusted advisor that helps teams move faster, not slower.</p><h2>Compliance and Velocity Can Coexist</h2><p>When organizations combine smart detection or SCA tools with developer-friendly workflows and cross-functional alignment, they can reduce risk without losing speed. It’s doable, and it’s already happening in teams globally.</p><p>So, ask yourself:</p><ul><li><p>Do we know what’s in our codebase?</p></li><li><p>Are we running AI-generated code through compliance and security processes?</p></li><li><p>Are we catching compliance and security risks early enough to act on them without impact on our timeline and costs?</p></li><li><p>Do our developers feel empowered to build fast without compromising trust or adding risks?</p></li></ul><p>If you can confidently answer “yes” to all four, then you’re on the right track.  For any answer other than "yes", then you have some work to do.</p><h2>Compliance Resources</h2><ul><li><p><a href="https://www.ibrahimatlinux.com/wp-content/uploads/2024/01/OpenSourceLicenseComplianceReport_010224.pdf" target="_blank">Open Source License Compliance: Challenges Ahead</a></p></li><li><p><a href="https://www.ibrahimatlinux.com/wp-content/uploads/2022/01/recommended-oss-compliance-practices.pdf" target="_blank">Recommended Open Source Compliance Practices for the Enterprise</a></p></li><li><p><a href="https://www.ibrahimatlinux.com/wp-content/uploads/2022/01/recommended-oss-compliance-practices.pdf" target="_blank">Open Source Compliance in the Enterprise</a></p></li><li><p><a href="https://www.ibrahimatlinux.com/wp-content/uploads/2021/12/an_open_guide_to_evaluating_software_composition_analysis_tools_v21.pdf" target="_blank">An Open Guide to Evaluating Software Composition Tools</a></p></li></ul><p><strong>###</strong></p></div>
+</body>
+</html>

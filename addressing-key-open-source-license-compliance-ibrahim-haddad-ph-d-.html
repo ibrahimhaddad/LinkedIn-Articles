@@ -1,0 +1,147 @@
+<html>
+<head>
+  <title>Addressing Key Open Source License Compliance Challenges</title>
+  <style>
+    body {
+      margin: 0 auto;
+      width: 744px;
+      font-family: Source Serif Pro, serif;
+      line-height: 32px;
+      font-weight: 400;
+      color: rgba(0, 0, 0, 0.7);
+      font-size: 21px;
+    }
+    h1, h2, h3 {
+      font-family: Source Sans Pro, Helvetica, Arial, sans-serif;
+    }
+    h1 a, h1 a:visited {
+      color: inherit;
+      text-decoration: none;
+    }
+    h1 {
+      line-height: 48px;
+      font-weight: 600;
+      color: rgba(0, 0, 0, 0.85);
+      font-size: 42px;
+      margin: 32px 0 20px;
+    }
+    h2 {
+      line-height: 32px;
+      font-weight: 600;
+      color: rgba(0, 0, 0, 0.85);
+      font-size: 26px;
+      margin: 28px 0;
+    }
+    h3 {
+      line-height: 28px;
+      font-weight: 600;
+      color: rgba(0, 0, 0, 0.85);
+      font-size: 21px;
+      margin: 24px 0;
+    }
+    p {
+      margin: 32px 0;
+    }
+    .created, .published {
+      color: rgba(0, 0, 0, 0.55);
+      font-size: 15px;
+      line-height: 15px;
+      margin: 20px 0;
+    }
+    .created + .published {
+      margin-top: -12px;
+    }
+    blockquote {
+      font-family: Georgia, Source Serif Pro, serif;
+      font-style: italic;
+      font-size: 24px;
+      line-height: 36px;
+      margin: 48px 120px;
+      text-align: center;
+    }
+    a {
+      word-wrap: break-word;
+      outline: none;
+      text-decoration: none;
+      background-color: transparent;
+      border: 0;
+      color: #008CC9;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    a:visited {
+      color: #8C68CB;
+    }
+    .center {
+      text-align: center;
+    }
+    iframe {
+      display: block;
+      margin: 44px auto;
+    }
+    *:not(pre) + pre, pre:first-of-type {
+      margin-top: 32px;
+      padding-top: 32px;
+    }
+    pre:only-of-type {
+      margin: 32px 0;
+      padding: 32px;
+    }
+    pre {
+      background: #F3F6F8;
+      overflow-x: auto;
+      display: block;
+      font-size: 13px;
+      font-family: monospace;
+      line-height: 13px;
+      padding: 0 32px 32px;
+      white-space: pre;
+    }
+    a.embedded {
+      background: #F3F6F8;
+      display: block;
+      padding: 32px;
+      margin: 32px 0;
+    }
+    img {
+      height: auto;
+      max-width: 100%;
+    }
+    .slate-image-embed__resize-full-width img {
+      width: 100%;
+    }
+    .series-logo {
+      width: 48px;
+      height: 48px;
+      box-sizing: border-box;
+      background-clip: content-box;
+      border: 4px solid transparent;
+      border-radius: 6px;
+      object-fit: scale-down;
+      float: left;
+    }
+    .series-title {
+      font-size: 16px;
+      font-weight: 600;
+      vertical-align: top;
+    }
+    .series-description {
+      color: rgba(0,0,0,.6);
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+    }
+    div {
+      margin: 32px 0;
+    }
+  </style>
+</head>
+<body>
+    <img src="https://media.licdn.com/mediaD4E12AQE0WhPSNBDcXQ" alt="Photo by Juanjo Jaramillo on Unsplash" title="Photo by Juanjo Jaramillo on Unsplash" />
+      <h1><a href="https://www.linkedin.com/pulse/addressing-key-open-source-license-compliance-ibrahim-haddad-ph-d-">Addressing Key Open Source License Compliance Challenges</a></h1>
+    <p class="created">Created on 2022-06-27 11:31</p>
+  <p class="published">Published on 2022-06-27 11:57</p>
+  <div><h2>Introduction</h2><p>Open source software runs every bit of our modern life. It’s ubiquitous. It powers the internet and everything connected to it. With that massive adoption over 20+ years, the concept of open source license compliance has evolved and we are in a much different space today than we were then. Most open source licenses are well understood. We understand what are the obligations per license that we need to fulfill and respect. We have educational programs and training to make sure people handling open source software are aware of their responsibilities. Enterprises have open source program offices (OSPOs) acting as clearinghouses for all open source activities (using, contributing, creating, complying). In the process, we’ve learned to build open source compliance programs, establish processes and policies to govern the use of and contribution to open source projects, adopt tools for automation processes, and so on… And, we’ve created a new breed of tools  – Software Composition Analysis Tools – to help us identify open source code, pinpoint its origins, license, and flag any security vulnerabilities found in it.</p><p><strong>Really great progress.</strong></p><p>However, we still have a number of challenges in relation to open source compliance that we need as an industry to chase and resolve.</p><h2>SCALABILITY – How can we build scalability in our compliance efforts?</h2><p>Enabling thousands of developers across any given organization using the SCA tooling simultaneously in support of their development efforts, scanning hundreds to thousands of software components daily, identifying the origin and license of these components, and identifying any possible security vulnerabilities found in the code base.</p><h2>STANDARDIZATION – What can we standardize across companies throughout the ecosystem?</h2><p>Standardizing various aspects of the compliance process and software bill of material (SBOM). There are a couple of efforts in this direction from the Linux Foundation:</p><ol><li><a href="https://www.openchainproject.org/" target="_blank">OpenChain&nbsp;</a>defines the key requirements for an organization’s open source compliance program. It establishes a conformance program where companies can self-certify to these requirements, with the goal of improving transparency and communication of compliance information across supply chains.</li><li><a href="https://spdx.dev/" target="_blank">SPDX</a>&nbsp;(Software Package Data Exchange) is a specification for communicating Software Bill of Materials information in a standardized, human- and machine-readable format. It enables better communication of information, including license and copyright details, between organizations and interoperability between compliance tools.</li></ol><p>Both of these initiatives are key in supporting open source compliance in a growing and complex software ecosystem.</p><h2>SPEED – How can we maintain highway speeds of development and not hinder it with slower compliance activities?</h2><p>Keeping up with the pace of fast development in open source is a major challenge from a compliance perspective. Compliance is often regarded as a burden, an add-on activity that must be done and no one likes to work on it. We need to change that and make compliance a nonvisible activity that happens automatically, in the background, at lightning speed.</p><h2>ACCURACY – Can we depend on the results?</h2><p>Accuracy is a critical challenge for many SCA tools. Ideally, when you scan code, you’d want the tool to identify the true origin of the code and the license under which that original code was released under. However, due to a high degree of code reuse, many scanned code bases appear dozens and hundreds of times as possible matches and hence requiring a compliance engineer directing the tool on what’s a correct match and what’s a false positive. Accuracy with many SCA tools is a concern and a great goal to achieve in the near future.</p><h2>INTUITIVE – Can everyone use it?</h2><p>As mentioned earlier, we want all developers to be compliance engineers and hence the tooling used to support compliance efforts should be easy to use and very intuitive. Deploying such tools directly with the developers would help avoid compliance problems before they get integrated with the larger code bases. You would want an easy-to-use tool that minimizes the learning curve and avoid the need for professional training.</p><h2>Addressing Common Compliance Problems</h2><p>There are some common compliance problems that constitute the bulk of where errors happen. See the figure below. Organizations need to have mechanisms to address these basic issues which will dramatically cut down their risks of non-compliance. </p><div class="slate-resizable-image-embed slate-image-embed__resize-full-width"><img alt="No alt text provided for this image" data-media-urn="urn:li:digitalmediaAsset:D4E12AQH2VyhYh-JxCw" src="https://media.licdn.com/dms/image/v2/D4E12AQH2VyhYh-JxCw/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1656329783404?e=1784160000&amp;v=beta&amp;t=jiGhhPHJEkbeF4mw5uGdWZH4iVGVJDPwfY0_FdVxw0Y"></div><h2>Closing</h2><p>There are certainly other challenges but the above would be my top picks. Open source license compliance is a personal interest. I continue to write about the topic and follow the news and the development of SCA tools. I believe the next frontier in open source compliance is taking the cost out of achieving compliance and providing a standardized easy-to-replicate process to ensure compliance and enable faster innovation with open source software.</p><p>What are the challenges you’re experiencing in relation to open source compliance? Please write about it, share it and more than likely you’re not the only one working to resolve them. Let’s come together as an industry and make open source compliance easier, faster, and cheaper.</p><h2>Linux Foundation Resources</h2><p>I would like to invite you to explore some of the resources that the Linux Foundation is making available for free on the topic of open source compliance.</p><ul><li><a href="https://compliance.linuxfoundation.org/" target="_blank">Linux Foundation Open Compliance Program:</a>&nbsp;The Open Compliance Program website is a starting point for developers and lawyers, particularly those who are new to open source compliance considerations, to learn more about the tools and best practices that can make compliance easier.</li><li><a href="https://training.linuxfoundation.org/training/open-source-licensing-basics-for-software-developers/" target="_blank">Open Source Licensing Basics for Software Developers:</a>&nbsp;This free training course is focused on developers (although it is also helpful to lawyers who are new to open source) as a basic grounding in open source licensing and compliance matters. It covers the underlying concepts of copyrights and patents; discusses how open source licenses function in this legal ecosystem, and gives concrete examples and recommendations for how best to include license and copyright notices in your own code. </li><li><a href="https://www.linuxfoundation.org/publications/2020/04/fact-gathering-the-first-and-most-important-task-in-software-negotiations/" target="_blank">Guide to Open Source Software for Procurement Professionals</a></li><li><a href="https://www.linuxfoundation.org/open-source-management/2017/05/practical-gpl-compliance/" target="_blank">Practical GPL Compliance</a></li><li><a href="https://www.linuxfoundation.org/publications/2020/04/docker-containers-for-legal-professionals/" target="_blank">Docker Containers and License Compliance</a></li><li><a href="https://www.linuxfoundation.org/compliance-and-security/2018/12/open-source-compliance-in-the-enterprise/" target="_blank">Open Source Compliance in the Enterprise</a></li><li><a href="https://www.linuxfoundation.org/open-source-management/2019/03/assessment-open-source-practices/" target="_blank">Assessment of Open Source Practices as Part of Due Diligence in Merger and Acquisition Transactions</a></li></ul></div>
+</body>
+</html>

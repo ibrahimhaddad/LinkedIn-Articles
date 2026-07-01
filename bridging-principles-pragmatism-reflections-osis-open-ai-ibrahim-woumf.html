@@ -1,0 +1,149 @@
+<html>
+<head>
+  <title>Bridging Principles and Pragmatism: Reflections on the OSI’s Open Source AI Definition Adoption Barriers 
+</title>
+  <style>
+    body {
+      margin: 0 auto;
+      width: 744px;
+      font-family: Source Serif Pro, serif;
+      line-height: 32px;
+      font-weight: 400;
+      color: rgba(0, 0, 0, 0.7);
+      font-size: 21px;
+    }
+    h1, h2, h3 {
+      font-family: Source Sans Pro, Helvetica, Arial, sans-serif;
+    }
+    h1 a, h1 a:visited {
+      color: inherit;
+      text-decoration: none;
+    }
+    h1 {
+      line-height: 48px;
+      font-weight: 600;
+      color: rgba(0, 0, 0, 0.85);
+      font-size: 42px;
+      margin: 32px 0 20px;
+    }
+    h2 {
+      line-height: 32px;
+      font-weight: 600;
+      color: rgba(0, 0, 0, 0.85);
+      font-size: 26px;
+      margin: 28px 0;
+    }
+    h3 {
+      line-height: 28px;
+      font-weight: 600;
+      color: rgba(0, 0, 0, 0.85);
+      font-size: 21px;
+      margin: 24px 0;
+    }
+    p {
+      margin: 32px 0;
+    }
+    .created, .published {
+      color: rgba(0, 0, 0, 0.55);
+      font-size: 15px;
+      line-height: 15px;
+      margin: 20px 0;
+    }
+    .created + .published {
+      margin-top: -12px;
+    }
+    blockquote {
+      font-family: Georgia, Source Serif Pro, serif;
+      font-style: italic;
+      font-size: 24px;
+      line-height: 36px;
+      margin: 48px 120px;
+      text-align: center;
+    }
+    a {
+      word-wrap: break-word;
+      outline: none;
+      text-decoration: none;
+      background-color: transparent;
+      border: 0;
+      color: #008CC9;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    a:visited {
+      color: #8C68CB;
+    }
+    .center {
+      text-align: center;
+    }
+    iframe {
+      display: block;
+      margin: 44px auto;
+    }
+    *:not(pre) + pre, pre:first-of-type {
+      margin-top: 32px;
+      padding-top: 32px;
+    }
+    pre:only-of-type {
+      margin: 32px 0;
+      padding: 32px;
+    }
+    pre {
+      background: #F3F6F8;
+      overflow-x: auto;
+      display: block;
+      font-size: 13px;
+      font-family: monospace;
+      line-height: 13px;
+      padding: 0 32px 32px;
+      white-space: pre;
+    }
+    a.embedded {
+      background: #F3F6F8;
+      display: block;
+      padding: 32px;
+      margin: 32px 0;
+    }
+    img {
+      height: auto;
+      max-width: 100%;
+    }
+    .slate-image-embed__resize-full-width img {
+      width: 100%;
+    }
+    .series-logo {
+      width: 48px;
+      height: 48px;
+      box-sizing: border-box;
+      background-clip: content-box;
+      border: 4px solid transparent;
+      border-radius: 6px;
+      object-fit: scale-down;
+      float: left;
+    }
+    .series-title {
+      font-size: 16px;
+      font-weight: 600;
+      vertical-align: top;
+    }
+    .series-description {
+      color: rgba(0,0,0,.6);
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+    }
+    div {
+      margin: 32px 0;
+    }
+  </style>
+</head>
+<body>
+    <img src="https://media.licdn.com/mediaD4D12AQFpbiOrUBxfRg" alt="Photo by Luke Southern on Unsplash" title="Photo by Luke Southern on Unsplash" />
+      <h1><a href="https://www.linkedin.com/pulse/bridging-principles-pragmatism-reflections-osis-open-ai-ibrahim-woumf">Bridging Principles and Pragmatism: Reflections on the OSI’s Open Source AI Definition Adoption Barriers 
+</a></h1>
+    <p class="created">Created on 2025-05-17 08:29</p>
+  <p class="published">Published on 2025-05-19 15:00</p>
+  <div><p>In this essay, I explore the practical adoption barriers of the Open Source Initiative’s Open Source AI Definition (OSAID v1.0), particularly from a commercial and operational perspective. While the OSAID presents a principled and rigorous framework for defining  “Open Source AI”, many organizations report structural, legal, and strategic constraints that make full compliance difficult. This essay outlines those barriers and proposes potential breakthrough paths to bridge the gap between open source ideals and implementation realities.</p><h2>Introduction</h2><p>In a previous essay, <a href="https://www.linkedin.com/pulse/reflections-open-source-ai-definition-mapping-model-haddad-ph-d--kttmf/?trackingId=xxtq3N87TteBomThrYG86w%3D%3D" target="_blank"><em>Reflections on the Open Source AI Definition and Mapping it to the Model Openness Framework</em></a>, I shared my thoughts on the alignment and divergence between the <a href="https://opensource.org/" target="_blank">Open Source Initiative</a>’s <a href="https://opensource.org/ai/open-source-ai-definition" target="_blank">Open Source AI Definition</a> (OSAID) and the <a href="https://isitopen.ai/" target="_blank">Model Openness Framework</a> (MOF). That post offered a high-level mapping of the two frameworks, discussing their distinct yet complementary roles. While OSAID aims to establish a principled and comprehensive definition of “Open Source AI” for <a href="https://opensource.org/ai/faq#what-is-an-ai-system" target="_blank"><em>AI systems</em></a>, the MOF provides a more practical approach for evaluating and improving the openness of <em>AI models</em> (a subset of AI systems), enabling organizations to progress toward full openness incrementally.&nbsp;</p><p>In this follow-up essay, I focus on the OSAID, exploring the barriers between its theoretical framework and its practical application. I plan to highlight OSAID (version 1.0) adoption challenges from a commercial perspective and explore possible paths forward. This essay reflects my perspectives and not the views of my current or past employers.</p><h2>Approach</h2><p>OSAID presents a principled vision of what open source should mean in the context of AI. While the Open Source Initiative (OSI) has long been the custodian of open source principles, organizations often seek to leverage the open source label for its advantages without fully embracing every component of the OSAID definition (<a href="https://opensource.org/ai/open-source-ai-definition" target="_blank">version 1.0</a>). In this analysis, I present these barriers (figure below), outlining the perspectives of OSI, as the guardian of open source principles, and organizations that wish to associate their AI systems with the “open source” label while navigating the practical constraints they face in the real world.</p><p></p><figure><img data-media-urn="urn:li:digitalmediaAsset:D4D12AQEMFMfZhTHuSA" src="https://media.licdn.com/dms/image/v2/D4D12AQEMFMfZhTHuSA/article-inline_image-shrink_1500_2232/B4DZbddGblGYAU-/0/1747472115856?e=1784160000&amp;v=beta&amp;t=11PpFf5G6TwZFFpvGDx7-TY33qoJyWUQC-Q0ZtjQSZc"><figcaption></figcaption></figure><h2>Barrier #1: Full Disclosure of Training Data</h2><p>OSAID requires organizations to provide detailed information about the training data used to develop an AI system, including its provenance, selection criteria, labeling processes, and data handling methods. This requirement applies even when the data cannot be shared due to licensing or privacy restrictions.</p><p>The rationale behind this requirement is rooted in reproducibility. According to the OSI, open systems must allow skilled practitioners to recreate a substantially equivalent model. Even if datasets are proprietary or unshareable, disclosing how the data was sourced, filtered, and used ensures transparency and accountability. This approach mirrors open source software principles, where source code and build instructions must be available, even if external dependencies are not redistributed.</p><p>However, for some organizations, this level of data disclosure presents significant challenges:</p><ul><li><p>These datasets are often subject to non-disclosure agreements or usage restrictions, making detailed descriptions risky and potentially legally problematic.</p></li><li><p>These datasets may include uncurated, poorly documented, or legally sensitive material, making provenance tracking complex.</p></li><li><p>Describing how data was handled may trigger regulatory or reputational risks, especially in regions with strict data protection laws or sensitive political considerations.</p></li><li><p>Data disclosures are increasingly regulated, and open transparency could expose companies to compliance violations or litigation.</p></li></ul><p>Although OSAID does not require redistribution of the dataset itself under an open license, the requirement to disclose its construction and handling is considered by many organizations as a burden that goes beyond current norms in open source software and AI research.</p><p>This challenging situation creates a core tension: balancing transparency to build public trust with the legal and strategic realities of data governance in a commercial environment. While the OSI’s <a href="https://opensource.org/ai/faq" target="_blank">FAQ</a> aims to provide clarity, ongoing dialogue with legal and industry stakeholders is essential to define acceptable, standardized practices that support openness and practical adoption.</p><h2>Barrier #2: Licensing Expectations on Model Weights</h2><p>OSAID requires that model parameters (weights) be made available under OSI-approved licenses allowing modification, redistribution, and reuse. While this requirement aligns with open source principles, it challenges some organizations that view model weights as core intellectual property. They consider that releasing these weights risks their monetization strategies and exposes them to possible misuse. Looking closely at this argument, organizations worry about losing control over model derivatives, fearing that such open access could lead to competitors creating versions that directly compete with their own or that misused models could pose safety threats.</p><p>Releasing model weights could also undermine a company’s ability to differentiate itself. Since these weights represent a critical competitive asset, companies fear their competitors could replicate their outputs without investing in the same data, engineering talent, or computing infrastructure. This requirement would diminish the value the company brings, as others could easily replicate the results without matching the original investment.&nbsp;</p><p>Organizations regard the impact of this requirement as a loss of strategic control and not as a positive step toward further openness.</p><p>A collaborative dialogue among all stakeholders (OSI, companies, legal experts, and AI practitioners) is essential to address the challenges surrounding the release of model weights. These parties must come together to openly discuss their concerns, explore potential compromises, and work towards a resolution that balances the core values of openness with the practical and strategic needs of the AI industry. Only through shared understanding and cooperation can a path forward be established that supports innovation and responsible business practices in the AI ecosystem.</p><h2>Barrier #3: Disclosure of Training Code and Process</h2><p>OSAID mandates the release of training code, including data filtering, hyperparameter tuning, and infrastructure pipelines. This requirement promotes reproducibility, transparency, and verifiability, principles rooted in traditional open-source software norms.</p><p>OSI’s position is that, just as open source software requires disclosure of compilation scripts and dependencies, open source AI systems should also make their training logic and configuration available. Without this level of disclosure, users of AI systems cannot fully understand, audit, or reproduce the system’s behavior, thus undermining the foundation of openness.</p><p>For many organizations, however, this level of transparency presents some challenges. Training pipelines are often unpolished and undocumented, originally built for internal use rather than public consumption. Moreover, the code is frequently tightly coupled with proprietary infrastructure, such as internal orchestration systems or cloud configurations, making its disclosure legally risky or operationally non-transferable.</p><p>Additionally, companies face concerns over intellectual property leakage, potential security exposure, or the unintended sharing of competitive techniques. Many organizations view this level of transparency as a step beyond what traditional open source practices require. While open source software necessitates build reproducibility, it does not typically demand the disclosure of how software was developed, tested, or deployed.</p><p>This barrier points to a broader challenge. The open source discipline, historically applied to software artifacts, needs to evolve to accommodate AI’s procedural and data-dependent nature. However, this evolution will require cultural shifts, new tooling, and risk mitigation strategies, all of which are changes that organizations are not yet prepared to undertake.&nbsp;</p><h2>Barrier #4: Legal Ambiguity and Enforcement Gaps&nbsp;</h2><p>Some organizations may be hesitant to fully embrace OSAID’s definition due to the absence of clear legal precedents or an established enforcement framework. This uncertainty around compliance obligations heightens legal risks, especially for organizations heavily invested in the development of AI systems or AI models. The future success of the OSAID definition may depend on the creation of supporting governance tools, but it remains unclear how the legal landscape will evolve in the coming years.</p><p>To address this challenge, the OSI and interested organizations and other open source foundations can explore:</p><ul><li><p>Developing clear and structured governance and compliance guidelines reduces legal ambiguity and ensures clarity of obligations for organizations.</p></li><li><p>Publishing case studies of successful OSAID compliance to help establish legal precedents and mitigate uncertainty.</p></li><li><p>Collaborating with intellectual property lawyers to shape enforceable policies and clarify legal risks.</p></li></ul><h2>Barrier #5: No Room for Partial Credit or Gradient Openness</h2><p>OSAID applies a binary lens: an AI system is either open source or not. This categorization presents challenges for organizations making incremental progress toward openness.</p><p>Organizations often want to progress towards higher levels of openness, but many fall short of meeting the full requirements outlined in OSAID. The binary framing of open source versus non-open source discourages these incremental efforts or any form of partial transparency, making it difficult for companies to demonstrate gradual improvements.&nbsp;</p><p>Commercial actors, in particular, may prefer frameworks that recognize partial openness and the progress made over time, like the MOF (aimed at AI models). However, from the OSI’s perspective, this strict stance is intentional to preserve the purity of open source principles. From a commercial standpoint, the lack of flexibility can hinder engagement, slow the adoption of open source practices, and make them fall short on meeting the OSAID.&nbsp;</p><h2>Strategic Takeaways&nbsp;</h2><p>As we consider the road ahead for open source AI, we must balance idealism and pragmatism and explore overcoming challenges hindering adoption. Below, I share some key takeaways for advancing the OSAID definition and fostering wider engagement.</p><h3>A Balancing Act&nbsp;</h3><p>The OSI’s definition is an essential anchor for what qualifies as “Open Source AI,” providing a principled foundation. However, this principled foundation is insufficient when structural, legal, or commercial barriers obstruct OSAID adoption. One way forward could be to develop frameworks, tools, and roadmaps to support organizations moving incrementally toward compliance. Let’s explore how we can create these pathways.&nbsp;</p><h3>Value Incremental Progress</h3><p>The binary “open or not” model can alienate contributors, researchers, and organizations striving for improvement but unable to meet every requirement immediately. This strict approach often deters transparency rather than encouraging it. Frameworks like the MOF offer a more flexible, gradient-based model to recognize partial openness in AI models. Could a similar approach be adopted for AI systems as well? Exploring the OSAID compliance landscape for different models within the MOF (and the <a href="https://mot.isitopen.ai/" target="_blank">Model Openness Tool</a>) could be a useful exercise for engaging the OSI and the MOF community in a constructive dialogue.</p><h3>Clarity Builds Trust</h3><p>Legal ambiguity and unfamiliar terminology can undermine trust and slow adoption. Organizations must understand what compliance entails and how it will be interpreted. Clear, well-documented compliance pathways and legal certainty are crucial for fostering commercial adoption. Expanding resources such as documentation, FAQs, and test cases could be valuable steps for the OSI to explore, helping clarify these aspects and build confidence among various stakeholders.</p><h3>Open Source Must Evolve with the AI Ecosystem</h3><p>AI systems differ fundamentally from traditional software. They rely heavily on data, model weights, fine-tuning, computational pipelines, and governance mechanisms. Applying legacy open source rules (or mode of thinking) without considering these nuances creates a rigid framework that may be out of touch with the evolving AI landscape. Therefore, to avoid those risks, we should prioritize adapting the open source principles to fit the unique nature of AI systems and their associated complexities.</p><h3>Bridge the Communities</h3><p>The path forward isn’t purely a matter of resolving technical or legal issues, it also requires fostering collaboration across diverse communities. Companies, open source foundations, AI advocates, researchers, practitioners, and regulators all need a shared understanding of the challenges. Achieving alignment won’t happen automatically, it must be actively cultivated through dialogue and cooperation. We need to address the following question: how do we build that alignment, and what steps can be taken to bridge these diverse communities?</p><h2>Ideas for Creating a Breakthrough</h2><p>In the current landscape, where the OSAID remains under-adopted despite its strong principles, it’s crucial to explore innovative paths to break through the existing deadlock. The following ideas aim to facilitate OSAID’s adoption, encourage incremental progress, and address the barriers organizations face in aligning with the definition. These proposals are designed to bridge the gap between ideals and practical implementation, paving the way for a more inclusive and gradual transition to fully open AI systems.</p><ol><li><p><strong>Collaborate with other open source foundations and relevant standards bodies: </strong>Partner with established standards organizations and AI consortia to define new “systems openness” models that work seamlessly with existing standards like <a href="https://spdx.dev/" target="_blank">SPDX</a>. By creating AI profiles based on varying levels of openness, we can support a gradual shift toward full compliance with OSAID’s principles.</p></li><li><p><strong>Develop transition roadmaps for incremental adoption: </strong>Provide organizations with clear transition blueprints that guide them from partially open source AI systems to full OSAID compliance over time. This approach mirrors the approach of the MOF for AI models, offering a scaffold that rewards incremental steps towards greater transparency.</p></li><li><p><strong>Expand OSAID to include hybrid openness of AI systems: </strong>Broaden the scope of OSAID to include guidance for hybrid openness. This could involve lightweight templates or profiles that clearly define different openness levels (such as “open inference only,” “open weights,” or “closed data”), which are easy to track and understand.</p></li><li><p><strong>Acknowledge progress in openness: </strong>Recognize AI systems that demonstrate progress, even if they don’t yet meet the full OSAID definition. Highlighting incremental improvements can motivate organizations to continue their journey toward openness without waiting for full compliance.</p></li><li><p><strong>Host OSI-Industry roundtables: </strong>Continue facilitating roundtable discussions between the OSI and industry leaders to align on real-world barriers to adoption. These sessions can help identify key friction points and develop actionable strategies to overcome them. Collaborative dialogue is essential to forging common ground.</p></li><li><p><strong>Establish a working group for OSAID and MOF evolution: </strong>Establish or support an ongoing working group that ensures OSAID and MOF remain dynamic, complementary frameworks. This group would focus on continuously refining both OSAID and the MOF based on incoming feedback and the evolving landscape of AI systems and models.</p></li><li><p><strong>Create a Trusted Transition Network: </strong>Build a Trusted Transition Network (a placeholder name) consisting of companies committed to following a roadmap toward openness. This network of companies would allow participants to share best practices, learn from each other, and receive recognition for their progress, fostering a community of shared commitment.</p></li><li><p><strong>Develop legal and compliance resources: </strong>Collaborate with legal experts to develop legal and compliance guidance, FAQs, and licensing walkthroughs. Clear legal frameworks to provide organizations with the confidence they need to adopt OSAID’s principles without risking non-compliance.</p></li><li><p><strong>Provide reference implementations and case studies: </strong>Develop reference implementations and annotated case studies to demonstrate how specific AI systems comply with the OSAID. These resources can serve as practical examples to follow.</p></li><li><p><strong>Create structured compliance checklists: </strong>Develop compliance checklists and, in the longer term, automated validation tools. These resources allow teams to self-assess their progress toward OSAID compliance, ensuring they can track their incremental improvements.</p></li><li><p><strong>Launch an openness dashboard for public reporting:</strong> Similar to what the MOT offers to AI models<strong>, </strong>create a public-facing openness dashboard where organizations can voluntarily self-report their current AI system’s openness status. This dashboard would enable companies to benchmark their progress and foster a spirit of transparency, even if they are not fully compliant with OSAID. Maybe even consider a badging system with the highest reward being fully compliant with the OSAID.</p></li></ol><p>By considering these ideas or a subset of them, as a collective of open source foundations, projects, and companies active in the AI ecosystem, we can create an environment where openness is achievable and incentivized. We should aim to provide a clear pathway for companies to gradually align with OSAID’s standards while fostering a more transparent and collaborative AI development landscape.</p><h2>Conclusion</h2><blockquote><p>The barriers explored in this essay are not critiques of OSAID’s intent but rather reflect the complex challenge of translating idealistic goals into actionable implementation. </p></blockquote><p>While OSAID provides a principled framework, the real task lies in creating practical pathways that balance the values of openness with the commercial realities that organizations face. To move forward, we must focus on operationalizing openness and developing the tools, incentives, and strategies that make principled open source AI adoption a tangible and practical reality.</p><blockquote><p>For organizations invested in advancing OSAID and making it work in practice, I recommend engaging with the OSI to provide constructive and actionable feedback from the right people in your organization, schedule workshops to pinpoint and discuss key challenges, and create actionable roadmaps for overcoming them.&nbsp;</p></blockquote><p>If we don’t take proactive steps, these opportunities for progress will remain out of reach. As a community, we’ve successfully navigated this kind of challenge before. I’m confident in our ability to do it again.</p><h2>Feedback</h2><p>For feedback on OSAID, please visit: <a href="https://discuss.opensource.org/" target="_blank">https://discuss.opensource.org/</a>.&nbsp;</p><h2>Acknowledgment</h2><p>I want to thank <a target="_blank" href="https://www.linkedin.com/in/maffulli?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAAB8iDkB0ol4Xd7gSskTxQDtvO2zkdP17-4">Stefano Maffulli</a> (Executive Director of OSI) and the OSI <a href="https://opensource.org/about/board-of-directors" target="_blank">board members </a>and <a href="https://opensource.org/about/team" target="_blank">team</a> for their leadership and perseverance in guiding the development of the OSAID. Bringing OSAID 1.0 to life required an incredible effort, patience, inclusive dialogue, and consensus-building. The result is a milestone that deserves recognition and continued support.&nbsp;</p><h2>About the author&nbsp;</h2><p>Dr. Ibrahim Haddad leads the Infotainment Engineering Group at Volvo Cars. He previously served as Vice President of Strategic Programs (AI) at the Linux Foundation, where he was also the Executive Director of LF AI &amp; Data and the Founding Executive Director of the PyTorch Foundation. Before that, Dr. Haddad was Vice President of R&amp;D and a Distinguished Engineer at Samsung Research. His career spans technical and portfolio leadership roles at Ericsson Research, the Open Source Development Labs, Motorola, Palm, and Hewlett-Packard. // <a href="https://www.linkedin.com/in/ibrahimhaddad/" target="_blank">LinkedIn</a> - <a href="https://ibrahimatlinux.com/" target="_blank">Website</a>&nbsp;//</p></div>
+</body>
+</html>

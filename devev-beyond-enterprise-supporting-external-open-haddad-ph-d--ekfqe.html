@@ -1,0 +1,147 @@
+<html>
+<head>
+  <title>DevEv Beyond the Enterprise: Supporting External and Open Source Developers </title>
+  <style>
+    body {
+      margin: 0 auto;
+      width: 744px;
+      font-family: Source Serif Pro, serif;
+      line-height: 32px;
+      font-weight: 400;
+      color: rgba(0, 0, 0, 0.7);
+      font-size: 21px;
+    }
+    h1, h2, h3 {
+      font-family: Source Sans Pro, Helvetica, Arial, sans-serif;
+    }
+    h1 a, h1 a:visited {
+      color: inherit;
+      text-decoration: none;
+    }
+    h1 {
+      line-height: 48px;
+      font-weight: 600;
+      color: rgba(0, 0, 0, 0.85);
+      font-size: 42px;
+      margin: 32px 0 20px;
+    }
+    h2 {
+      line-height: 32px;
+      font-weight: 600;
+      color: rgba(0, 0, 0, 0.85);
+      font-size: 26px;
+      margin: 28px 0;
+    }
+    h3 {
+      line-height: 28px;
+      font-weight: 600;
+      color: rgba(0, 0, 0, 0.85);
+      font-size: 21px;
+      margin: 24px 0;
+    }
+    p {
+      margin: 32px 0;
+    }
+    .created, .published {
+      color: rgba(0, 0, 0, 0.55);
+      font-size: 15px;
+      line-height: 15px;
+      margin: 20px 0;
+    }
+    .created + .published {
+      margin-top: -12px;
+    }
+    blockquote {
+      font-family: Georgia, Source Serif Pro, serif;
+      font-style: italic;
+      font-size: 24px;
+      line-height: 36px;
+      margin: 48px 120px;
+      text-align: center;
+    }
+    a {
+      word-wrap: break-word;
+      outline: none;
+      text-decoration: none;
+      background-color: transparent;
+      border: 0;
+      color: #008CC9;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    a:visited {
+      color: #8C68CB;
+    }
+    .center {
+      text-align: center;
+    }
+    iframe {
+      display: block;
+      margin: 44px auto;
+    }
+    *:not(pre) + pre, pre:first-of-type {
+      margin-top: 32px;
+      padding-top: 32px;
+    }
+    pre:only-of-type {
+      margin: 32px 0;
+      padding: 32px;
+    }
+    pre {
+      background: #F3F6F8;
+      overflow-x: auto;
+      display: block;
+      font-size: 13px;
+      font-family: monospace;
+      line-height: 13px;
+      padding: 0 32px 32px;
+      white-space: pre;
+    }
+    a.embedded {
+      background: #F3F6F8;
+      display: block;
+      padding: 32px;
+      margin: 32px 0;
+    }
+    img {
+      height: auto;
+      max-width: 100%;
+    }
+    .slate-image-embed__resize-full-width img {
+      width: 100%;
+    }
+    .series-logo {
+      width: 48px;
+      height: 48px;
+      box-sizing: border-box;
+      background-clip: content-box;
+      border: 4px solid transparent;
+      border-radius: 6px;
+      object-fit: scale-down;
+      float: left;
+    }
+    .series-title {
+      font-size: 16px;
+      font-weight: 600;
+      vertical-align: top;
+    }
+    .series-description {
+      color: rgba(0,0,0,.6);
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+    }
+    div {
+      margin: 32px 0;
+    }
+  </style>
+</head>
+<body>
+    <img src="https://media.licdn.com/mediaD4D12AQE5Kd2A6oX18g" alt="Photo by Danny Meneses (https://www.pexels.com/)" title="Photo by Danny Meneses (https://www.pexels.com/)" />
+      <h1><a href="https://www.linkedin.com/pulse/devev-beyond-enterprise-supporting-external-open-haddad-ph-d--ekfqe">DevEv Beyond the Enterprise: Supporting External and Open Source Developers </a></h1>
+    <p class="created">Created on 2026-01-07 14:56</p>
+  <p class="published">Published on 2026-01-13 16:30</p>
+  <div><p>I spent some of 2025 writing about DevEx. I want to start 2026 by zooming in on a part we often underestimate: external developers. While much of the focus on DevEx centers on internal engineering teams, an increasingly critical dimension is the experience of external developers, who build upon your SDKs, APIs, or contribute to your open source projects. These developers may be partners, customers, or open source enthusiasts/contributors. When they struggle, adoption slows. When they succeed, your platform compounds. You definitely want them to succeed.</p><p>Improving external DevEx is a strategic investment in the growth of your ecosystem. It reduces drop-off, increases reuse, and turns one-time users into long-term contributors. Whether your goal is community contribution, API adoption, or third-party integration, delivering a frictionless, developer-centric experience is key.</p><p>In this short post, I will cover 3 things:</p><ol><li><p>Challenges facing external developers</p></li><li><p>Key metrics to track for external DevEx</p></li><li><p>Practical recommendations to improve the DevEx of external developers</p></li></ol><h3>Common Challenges for External Developers</h3><p>Let's start with where external developers usually get stuck. The following list is not exhaustive, however, it covers key challenges:</p><ul><li><p><strong>Inconsistent or incomplete documentation: </strong>Poor or outdated documentation is the number one barrier to onboarding. Clear, example-driven documentation is essential. If developers have to reverse-engineer behavior from source code or issues, you’ve already lost momentum.</p></li><li><p><strong>Complex onboarding: </strong>If it takes more than a few minutes to get a "Hello World!" running, friction is already too high. Strong platforms aim for first success in under 10 minutes. Time to First Success (TTFS) should be short and smooth.</p></li><li><p><strong>Limited visibility into the roadmap or governance: </strong>A lack of transparency regarding direction or contribution processes can deter engagement in open source projects. Document who decides what, how proposals move forward, and what happens to rejected ideas, etc. Ambiguity here quietly kills contributions.</p></li><li><p><strong>Poor support and slow feedback loops: </strong>A good example of such a challenge would be unanswered GitHub issues, stalled PRs, or ignored forum posts. Unanswered issues signal indifference (not the signal you want to send). Over time, developers stop asking and simply move on.</p></li><li><p><strong>Authentication and integration barriers: </strong>SDKs or APIs that require complex auth flows or excessive setup steps slow down adoption and increase drop-off rates.</p></li><li><p><strong>Fragmented or (sometimes called) noisy community channels: </strong>Fragmented or noisy community channels create confusion and slow collaboration.</p></li></ul><p>Now that we have covered the challenges or friction points, let's move to the next step, which is making them visible and measurable through the identification of key metrics to track and improve.</p><h3>Metrics to Track for External DevEx</h3><p>To improve external DevEx, you need signals. Here is a list of metrics that are a good starting point:</p><ul><li><p><strong>Time to First Hello World</strong>: How long does it take a new developer to get something working? Aim for &lt; X minutes - X varies.</p></li><li><p><strong>Documentation Satisfaction Score</strong>: Regularly gather feedback through surveys or embedded feedback widgets.</p></li><li><p><strong>Setup Failure Rate: </strong>How many developers abandon setup due to errors or missing prerequisites?</p></li><li><p><strong>Issue Response Time (GitHub or support channels)</strong>: Average time to first reply on community-raised issues or questions.</p></li><li><p><strong>Pull Request Merge Time</strong>: How long does it take for external contributions to be reviewed and merged?</p></li><li><p><strong>Onboarding Completion Rate</strong>: Percentage of developers who start and finish onboarding tutorials or quickstarts.</p></li><li><p><strong>Churn Rate in SDK/API usage</strong>: How many developers drop off after initial interest?</p></li><li><p><strong>Community Engagement Rate</strong>: Participation in forums, discussions, or feedback channels.</p></li><li><p><strong>Contributor Retention</strong>: How many contributors return after their first merged pull request?</p></li><li><p><strong>Failed onboarding attempts: </strong>Many developers start onboarding but never reach the first success due to missing prerequisites, unclear steps, or other such reasons. These drop-offs are often invisible unless you explicitly track where and why developers abandon the process.</p></li><li><p><strong>Docs search behavior: </strong>This is a cool metric! What developers search for in your documentation reveals where your mental model and theirs diverge. Repeated searches for the same terms usually signal missing, hard-to-find, or poorly explained concepts.</p></li><li><p><strong>Error rate during setup: </strong>High error rates during installation or initial configuration are early warning signs of fragile tooling or unclear assumptions. Each setup error compounds frustration and sharply increases the likelihood of abandonment.</p></li></ul><p>These key metrics tell you where the pain or the friction is. Great. However, the real work starts next and involves deciding what to change to improve and then implementing it.</p><h3>Improving External DevEx: Practical Recommendations</h3><p>To address these challenges and create a developer experience that drives adoption and long-term engagement, organizations should focus on practical, experience-driven improvements. In the next sections, I cover 6 main areas or recommendations. </p><p><strong>Design for fast understanding (build a great developer journey)</strong></p><p>The external developer journey begins long before any developer writes the first line of code. From the moment a developer discovers your project or platform, their experience is shaped by how quickly they can understand the value, set up their environment, and see results.&nbsp;</p><p>To improve their journey, there are some possible and practical guidelines you can follow:</p><ul><li><p>Provide clear landing pages tailored for developers, featuring obvious CTAs such as "Get Started" or "Try It Now."</p></li><li><p>Invest in developer onboarding guides, including video walkthroughs and a quickstart. If you do only one thing, make your quickstart impossible to get wrong.</p></li><li><p>Offer language-specific SDKs and prebuilt integrations to remove friction.</p></li><li><p>Embed contextual help and tutorials throughout the user journey, especially in onboarding workflows and CLI tools.</p></li></ul><p>A strong first experience matters, but it quickly erodes without fast and predictable feedback.</p><p><strong>Create Fast and Reliable Feedback Loops</strong></p><p>A significant pain point for external developers is a lack of timely feedback on support questions, bug reports, and pull requests. Improving the responsiveness of your team and community is essential to help address such gaps:</p><ul><li><p>Set internal SLAs for GitHub issue responses and PR reviews.</p></li><li><p>Use GitHub Discussions, Discord, or Slack to route questions to the right people quickly.</p></li><li><p>Empower developer advocates to act as bridges between external users and internal teams.</p></li><li><p>Regularly publish release notes and changelogs that recognize community contributions and close the loop on feedback.</p></li></ul><p><strong>Reduce Friction at Every Step</strong></p><p>Friction accumulates from small barriers, such as unclear API error messages, undocumented edge cases, and complex installation processes. One unclear error message can cost hours and could be possible to overcome. However, when you have three or more unclear error messages in a row, this usually ends the session. Companies should proactively identify and eliminate these blockers:</p><ul><li><p>Continuously test the onboarding process as a new user to ensure it is effective.</p></li><li><p>Utilize telemetry and feedback (where privacy-compliant) to identify areas of drop-off.</p></li><li><p>Simplify setup and authentication, and provide mock APIs or sandbox environments for experimentation.</p></li><li><p>Standardize error messages and include links to docs or suggested fixes.</p></li></ul><p><strong>Treat Documentation as a First-Class Product</strong></p><p>For external developers, documentation is the product. Here are some pointers to help improve documentation:</p><ul><li><p>Make it accessible, searchable, and open to community contributions.</p></li><li><p>Include runnable code snippets, live API explorers, and "copy-paste" functionality.</p></li><li><p>Ensure examples are tested and versioned alongside your codebase.</p></li><li><p>Track documentation satisfaction through surveys, thumbs-up/down widgets, and analytics.</p></li></ul><p><strong>Build Developer Trust and Loyalty</strong></p><p>Developers remember how you respond when things break, not how polished your launch was. Developers want to feel heard, respected, and empowered. How do you do that?</p><ul><li><p>Highlight community contributors in newsletters and release notes.</p></li><li><p>Offer speaking opportunities, mentorship, or funding through foundation programs.</p></li><li><p>Be transparent about product roadmaps and governance decisions.</p></li><li><p>Host hackathons, office hours, and AMAs to foster direct engagement.</p></li></ul><p><strong>Empower a DevEx Ownership Team</strong></p><p>External DevEx often falls between functions. When everyone owns DevEx, no one really does it, and external developers feel that fragmentation immediately. Organizations often designate a cross-functional team spanning engineering, DevRel, product, and docs to own the end-to-end developer journey. You can do the following to support such an effort:</p><ul><li><p>Map the full developer lifecycle from discovery to active use.</p></li><li><p>Set OKRs focused on DevEx metrics and report progress regularly.</p></li><li><p>Treat external developers as customers and design their experience as such.</p></li></ul><p>When ownership is clear, improvements compound, and the ecosystem starts to grow on its own.</p><h3>Final Thoughts</h3><p>External DevEx is not about being nice to developers. It’s about removing reasons to leave. Whether you’re stewarding an open source project, scaling a platform, or launching a developer-facing product, reducing friction and increasing clarity will deliver compounding returns.</p><p>When external developers succeed with your tools, APIs, or projects, your whole ecosystem wins.</p><blockquote><p>As always, thanks for reading and for any feedback you drop in the comments section.</p></blockquote><p></p></div>
+</body>
+</html>

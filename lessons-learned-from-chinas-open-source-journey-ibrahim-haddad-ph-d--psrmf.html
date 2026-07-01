@@ -1,0 +1,147 @@
+<html>
+<head>
+  <title>Lessons Learned from China’s Open Source Journey</title>
+  <style>
+    body {
+      margin: 0 auto;
+      width: 744px;
+      font-family: Source Serif Pro, serif;
+      line-height: 32px;
+      font-weight: 400;
+      color: rgba(0, 0, 0, 0.7);
+      font-size: 21px;
+    }
+    h1, h2, h3 {
+      font-family: Source Sans Pro, Helvetica, Arial, sans-serif;
+    }
+    h1 a, h1 a:visited {
+      color: inherit;
+      text-decoration: none;
+    }
+    h1 {
+      line-height: 48px;
+      font-weight: 600;
+      color: rgba(0, 0, 0, 0.85);
+      font-size: 42px;
+      margin: 32px 0 20px;
+    }
+    h2 {
+      line-height: 32px;
+      font-weight: 600;
+      color: rgba(0, 0, 0, 0.85);
+      font-size: 26px;
+      margin: 28px 0;
+    }
+    h3 {
+      line-height: 28px;
+      font-weight: 600;
+      color: rgba(0, 0, 0, 0.85);
+      font-size: 21px;
+      margin: 24px 0;
+    }
+    p {
+      margin: 32px 0;
+    }
+    .created, .published {
+      color: rgba(0, 0, 0, 0.55);
+      font-size: 15px;
+      line-height: 15px;
+      margin: 20px 0;
+    }
+    .created + .published {
+      margin-top: -12px;
+    }
+    blockquote {
+      font-family: Georgia, Source Serif Pro, serif;
+      font-style: italic;
+      font-size: 24px;
+      line-height: 36px;
+      margin: 48px 120px;
+      text-align: center;
+    }
+    a {
+      word-wrap: break-word;
+      outline: none;
+      text-decoration: none;
+      background-color: transparent;
+      border: 0;
+      color: #008CC9;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    a:visited {
+      color: #8C68CB;
+    }
+    .center {
+      text-align: center;
+    }
+    iframe {
+      display: block;
+      margin: 44px auto;
+    }
+    *:not(pre) + pre, pre:first-of-type {
+      margin-top: 32px;
+      padding-top: 32px;
+    }
+    pre:only-of-type {
+      margin: 32px 0;
+      padding: 32px;
+    }
+    pre {
+      background: #F3F6F8;
+      overflow-x: auto;
+      display: block;
+      font-size: 13px;
+      font-family: monospace;
+      line-height: 13px;
+      padding: 0 32px 32px;
+      white-space: pre;
+    }
+    a.embedded {
+      background: #F3F6F8;
+      display: block;
+      padding: 32px;
+      margin: 32px 0;
+    }
+    img {
+      height: auto;
+      max-width: 100%;
+    }
+    .slate-image-embed__resize-full-width img {
+      width: 100%;
+    }
+    .series-logo {
+      width: 48px;
+      height: 48px;
+      box-sizing: border-box;
+      background-clip: content-box;
+      border: 4px solid transparent;
+      border-radius: 6px;
+      object-fit: scale-down;
+      float: left;
+    }
+    .series-title {
+      font-size: 16px;
+      font-weight: 600;
+      vertical-align: top;
+    }
+    .series-description {
+      color: rgba(0,0,0,.6);
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+    }
+    div {
+      margin: 32px 0;
+    }
+  </style>
+</head>
+<body>
+    <img src="https://media.licdn.com/mediaD4D12AQFo5ITttS2PKA" alt="Photo by Edward He on Unsplash" title="Photo by Edward He on Unsplash" />
+      <h1><a href="https://www.linkedin.com/pulse/lessons-learned-from-chinas-open-source-journey-ibrahim-haddad-ph-d--psrmf">Lessons Learned from China’s Open Source Journey</a></h1>
+    <p class="created">Created on 2025-09-27 16:09</p>
+  <p class="published">Published on 2025-09-30 16:03</p>
+  <div><h2>Introduction</h2><p>China’s multi-decade journey in open source offers a unique perspective on how government policy, corporate strategy, and developer ecosystems can be orchestrated to achieve national technology goals, providing lessons that other countries and organizations can adapt to their own contexts. In a previous&nbsp;<a href="https://www.linkedin.com/posts/ibrahimhaddad_chinas-open-source-story-activity-7371210798288928768-QMuq?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAAAAnyZsBsldvsJ_ICcqAZ2KacC6Yjb_QphE" target="_blank">post</a>, I provided a timeline of China's involvement in open source from 1990 to the present time. In this post, I outline some of the lessons learned from China's experience that other countries can examine and draw upon. This is a work in progress and an excerpt from a lengthy report I am writing on the topic, which offers a great learning experience, especially for EU countries looking to strengthen their digital sovereignty through open source. </p><p>In parallel, I am <a href="https://www.linkedin.com/posts/ibrahimhaddad_opensource-digitalgovernance-eutech-activity-7377363836703621120-JFJw?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAAAAnyZsBsldvsJ_ICcqAZ2KacC6Yjb_QphE" target="_blank">collaborating</a> with an EU-based NGO to make a case for establishing national-level Open Source Program Offices as a foundational component of public digital governance across the European Union (more on that in the coming few weeks).</p><figure><img data-media-urn="urn:li:digitalmediaAsset:D4D12AQF_RiEO05LLwA" src="https://media.licdn.com/dms/image/v2/D4D12AQF_RiEO05LLwA/article-inline_image-shrink_1500_2232/B4DZmL8XBaHwAY-/0/1758989481173?e=1784160000&amp;v=beta&amp;t=hgHBQHwZBwbueFO_PmiHdBhpQXF0th6tF8yPd4bmjww"><figcaption>China's open source journey from technology dependency to independent technology leadership</figcaption></figure><p>In what follows, we briefly touch on seven lessons we can draw from China's experience in building capacity and driving towards a leadership position in open source.</p><h2>1. Strategic alignment between government and industry</h2><p>China’s experience shows that open source adoption is vastly accelerated when government strategy explicitly links OSS to national priorities. By framing open source as a tool for technology sovereignty, China created incentives for corporations to invest in OSS projects and infrastructure. This alignment also encouraged universities and research institutes to participate in building domestic ecosystems, demonstrating that policy clarity and strategic framing can significantly shape national technology outcomes.</p><h2>2. Build domestic capabilities before contributing globally</h2><p>China followed a phased approach, starting with experimentation and early adoption, then internal scaling, and finally making selective upstream contributions and working closely through open source foundations. This sequence highlights that a country benefits from mastering internal OSS capabilities, creating robust ecosystems, and understanding local needs before prioritizing global contributions.</p><h2>3. Sovereignty drives investment</h2><p>Concerns over reliance on foreign technology drove China to invest heavily in domestic technologies and frameworks. This heavy investment illustrates that framing OSS as part of national digital sovereignty can mobilize resources, attract top talent, and accelerate the development of high-impact technology platforms.</p><h2>4. Public-private collaboration multiplies impact </h2><p>China leveraged both private and state-owned enterprises to scale the adoption of open source rapidly. Companies like Huawei, Alibaba, Tencent, and Baidu became innovation engines for OSS, supported by state guidance and incentives. Public-private collaboration allowed projects to scale nationally while also establishing governance mechanisms (OpenAtom Foundation). This collaboration demonstrates that co-investment between government and industry can accelerate adoption, drive standardization, and ensure sustainability.</p><h2>5. Open source as a platform for innovation </h2><p>Open source became the foundation for China’s AI, cloud, and big data ecosystems. It enabled the rapid creation of generative AI models, cloud-native infrastructure, and domestic software alternatives. By using OSS as a base rather than building everything from scratch, China accelerated technology cycles and innovation capacity, demonstrating that OSS is a cost-saving tool and a launchpad for next-generation technology leadership.</p><h2>6. Balance global engagement with domestic ecosystem control </h2><p>China shows the value of a dual approach: participating in global OSS communities for learning, collaboration, and influence, while maintaining domestic forks and ecosystems when geopolitical or strategic factors require autonomy. This dual strategy ensures access to global innovations without compromising national sovereignty, illustrating how careful governance can enable countries to benefit from open source technology while protecting their strategic interests.</p><h2>7. Phased and layered approach </h2><p>China’s OSS journey illustrates a clear, staged progression: early experimentation → localized adoption → internal scaling → governance structures → global influence. Each stage is built on the previous one, combining capability development, ecosystem building, and governance. This approach highlights the importance of long-term planning and incremental capability development when designing national OSS strategies.</p><h2>Conclusion</h2><p>China’s open source evolution demonstrates the power of aligning government policy, corporate strategy, and developer communities to drive innovation and national technology sovereignty. Strategic localization, corporate champions, and active community engagement enabled China to scale from Linux experimentation to leadership in AI and cloud computing. The dual approach, participating globally while maintaining domestic control, offers a model for leveraging open source as a strategic national asset.</p><blockquote><p>Thank you for reading! For feedback, please drop me a DM.</p></blockquote><p><strong>###</strong></p><p>cc: <a target="_blank">Linux Foundation Europe</a>, <a target="_blank">The Linux Foundation</a>, <a target="_blank">Linux Foundation Japan</a>, <a target="_blank">Cloud Native Computing Foundation (CNCF)</a>, <a target="_blank">LF AI &amp; Data Foundation </a>, <a target="_blank">The Apache Software Foundation</a>, <a target="_blank">Mozilla</a>, <a target="_blank">OpenForum Europe</a>, <a target="_blank">Eclipse Foundation</a>, <a target="_blank">TODO (OSPO) Group</a> </p><p>###</p><h2>About the Author</h2><p>Dr Ibrahim Haddad is currently Head of Infotainment at Volvo Cars. Previously, he served as Vice President of Strategic Programs (AI) at the Linux Foundation, where he was the Executive Director of LF AI &amp; Data and the Founding Executive Director of the PyTorch Foundation. Before the Linux Foundation, Dr Haddad served as Vice President of R&amp;D and Distinguished Engineer at Samsung Research Silicon Valley. His career includes R&amp;D technical and leadership roles at Ericsson Research, Open Source Development Labs, Motorola, Palm, and Hewlett-Packard. He holds a PhD with honours in Computer Science from Concordia University (Montréal, Canada).   </p><p><a href="https://www.linkedin.com/in/ibrahimhaddad/" target="_blank">LinkedIn</a> - <a href="https://ibrahimatlinux.com/" target="_blank">Website</a></p><p></p></div>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<html>
+<head>
+  <title>Reflections on the Open Source AI Definition and Mapping it to the Model Openness Framework</title>
+  <style>
+    body {
+      margin: 0 auto;
+      width: 744px;
+      font-family: Source Serif Pro, serif;
+      line-height: 32px;
+      font-weight: 400;
+      color: rgba(0, 0, 0, 0.7);
+      font-size: 21px;
+    }
+    h1, h2, h3 {
+      font-family: Source Sans Pro, Helvetica, Arial, sans-serif;
+    }
+    h1 a, h1 a:visited {
+      color: inherit;
+      text-decoration: none;
+    }
+    h1 {
+      line-height: 48px;
+      font-weight: 600;
+      color: rgba(0, 0, 0, 0.85);
+      font-size: 42px;
+      margin: 32px 0 20px;
+    }
+    h2 {
+      line-height: 32px;
+      font-weight: 600;
+      color: rgba(0, 0, 0, 0.85);
+      font-size: 26px;
+      margin: 28px 0;
+    }
+    h3 {
+      line-height: 28px;
+      font-weight: 600;
+      color: rgba(0, 0, 0, 0.85);
+      font-size: 21px;
+      margin: 24px 0;
+    }
+    p {
+      margin: 32px 0;
+    }
+    .created, .published {
+      color: rgba(0, 0, 0, 0.55);
+      font-size: 15px;
+      line-height: 15px;
+      margin: 20px 0;
+    }
+    .created + .published {
+      margin-top: -12px;
+    }
+    blockquote {
+      font-family: Georgia, Source Serif Pro, serif;
+      font-style: italic;
+      font-size: 24px;
+      line-height: 36px;
+      margin: 48px 120px;
+      text-align: center;
+    }
+    a {
+      word-wrap: break-word;
+      outline: none;
+      text-decoration: none;
+      background-color: transparent;
+      border: 0;
+      color: #008CC9;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    a:visited {
+      color: #8C68CB;
+    }
+    .center {
+      text-align: center;
+    }
+    iframe {
+      display: block;
+      margin: 44px auto;
+    }
+    *:not(pre) + pre, pre:first-of-type {
+      margin-top: 32px;
+      padding-top: 32px;
+    }
+    pre:only-of-type {
+      margin: 32px 0;
+      padding: 32px;
+    }
+    pre {
+      background: #F3F6F8;
+      overflow-x: auto;
+      display: block;
+      font-size: 13px;
+      font-family: monospace;
+      line-height: 13px;
+      padding: 0 32px 32px;
+      white-space: pre;
+    }
+    a.embedded {
+      background: #F3F6F8;
+      display: block;
+      padding: 32px;
+      margin: 32px 0;
+    }
+    img {
+      height: auto;
+      max-width: 100%;
+    }
+    .slate-image-embed__resize-full-width img {
+      width: 100%;
+    }
+    .series-logo {
+      width: 48px;
+      height: 48px;
+      box-sizing: border-box;
+      background-clip: content-box;
+      border: 4px solid transparent;
+      border-radius: 6px;
+      object-fit: scale-down;
+      float: left;
+    }
+    .series-title {
+      font-size: 16px;
+      font-weight: 600;
+      vertical-align: top;
+    }
+    .series-description {
+      color: rgba(0,0,0,.6);
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+    }
+    div {
+      margin: 32px 0;
+    }
+  </style>
+</head>
+<body>
+    <img src="https://media.licdn.com/mediaD4D12AQEvVcUaFuCD6A" alt="Photo by Toni Reed on Unsplash" title="Photo by Toni Reed on Unsplash" />
+      <h1><a href="https://www.linkedin.com/pulse/reflections-open-source-ai-definition-mapping-model-haddad-ph-d--kttmf">Reflections on the Open Source AI Definition and Mapping it to the Model Openness Framework</a></h1>
+    <p class="created">Created on 2025-04-29 12:43</p>
+  <p class="published">Published on 2025-04-30 14:00</p>
+  <div><h2>Introduction&nbsp;</h2><p>Recently, the <a target="_blank">Open Source Initiative (OSI)</a> released <a href="https://opensource.org/ai/open-source-ai-definition" target="_blank">version 1.0</a> of its Open Source AI Definition (OSAID), setting out to clarify what it means for AI systems to be considered open source. The 1.0 version is the result of over a year of collaborative work, shaped through public consultations, expert roundtables, community feedback, and iterative refinement, reflecting a broad, global effort to define what openness truly means in the context of AI.&nbsp;(Thank you <a target="_blank">Stefano Maffulli</a> &amp; OSI team).</p><p>Version 1.0 lays down a clear and credible benchmark that decision-makers can build on to shape open and transparent AI systems. Turning the OSAID into something that can be adopted and embraced across different organizations and ecosystems will require more than principles alone. We also need structured tools to assess AI model openness in the real world. That’s where the <a href="https://isitopen.ai/" target="_blank">Model Openness Framework</a> (MOF) comes in. Developed through a collaboration under the <a href="https://lfaidata.foundation/" target="_blank">LF AI &amp; Data</a> umbrella at <a target="_blank">The Linux Foundation</a>, the MOF offers a practical way to evaluate how open an AI model is across different dimensions. Rather than prescribing licenses or specific policies, the MOF helps stakeholders better understand <em>how</em> and <em>to what extent</em> models are open, providing a flexible, structured approach to support real-world adoption. It’s important to note that while the OSAID examines AI systems, the MOF is focused on AI models.</p><h2>A High-Level Mapping</h2><p>During my tenure as Executive Director of LF AI &amp; Data, I often recommended organizations involved with us through the <a href="https://genaicommons.org/" target="_blank">Generative AI Commons</a> to map the OSI’s OSAID against the MOF to see where they align and where they might diverge, to have a good basis for providing informed feedback. This post reflects my take on that exercise, using version 1.0 of the OSAID as a reference point and the <a href="https://arxiv.org/abs/2403.13784" target="_blank">latest published</a> version of the MOF. As a disclaimer, I am a co-creator of the MOF and a co-author of the referenced paper. </p><p>In the following sections, I’ll discuss the OSAID core elements and explain how they correlate with the MOF’s structure and criteria.</p><p>Access to Code</p><p>The OSAID requires releasing the complete source code to train, run, and evaluate the AI system, including preprocessing scripts, model architecture, training loops, and inference pipelines. This requirement maps directly to the Code dimension of the MOF, which assesses the availability and completeness of such source code, specifically under an <a href="https://opensource.org/licenses" target="_blank">OSI-approved open source license</a>.</p><p>Access to Parameters</p><p>OSAID also calls for the model parameters, such as weights and optimizer states, to be available under open terms. In the MOF, the Weights dimension captures this aspect, evaluating whether these artefacts are available and usable under licenses like CDLA-Permissive-2.0 (preferred) or another OSI-approved open data license (acceptable).</p><p>Data Transparency</p><p>One of OSAID’s strongest contributions is its emphasis on Data Information requiring detailed documentation about the datasets used, their provenance, any preprocessing applied, and whether the data is accessible. The MOF reflects a similar priority through its Data dimension, which distinguishes between actual access to datasets and transparency about data usage practices.</p><p>Modifiability and Redistribution</p><p>OSAID places significant importance on the freedoms to use, study, modify, and share the system and its components. The MOF addresses these freedoms, specific to an AI model, across two key dimensions: Licensing (is the model legally modifiable?) and Usability (is it practically possible to work with and build on the model?).</p><p>System-Level Coherence</p><p>Finally, OSAID takes a holistic view of AI systems, encouraging the release of artifacts in the preferred form for modification. The MOF similarly supports model-level evaluation by allowing stakeholders to aggregate across its dimensions to judge a model’s overall openness.</p><h3>Why Does This Mapping Matter?</h3><p>The MOF can be a valuable companion tool for organizations evaluating whether to support or adopt the OSAID. While the OSI’s definition provides high-level principles, the MOF brings a practical framework for assessing openness in real-world applications. When used together, they offer a powerful combination: clear values to align around and concrete tools to operationalize those values.</p><p>As a co-creator of the MOF, I do not observe any fundamental conflict between the OSAID and the MOF. However, there are important differences in purpose, scope, and interpretation, and it’s worth unpacking those distinctions to ensure there’s no room for confusion.</p><h2>OSAID and MOF: Where do they align?</h2><p>The alignment between the OSAID and the MOF in these three core areas indicates they share a vision for ensuring transparency, clarity, and adaptability in AI systems. In the following sections, we provide a breakdown of how each area is addressed.</p><p>Commitment to Transparency and Access</p><p>The OSAID and the MOF value making data, code, and model weights freely accessible. This commitment ensures that the foundation of AI development remains open and auditable. In particular, the MOF emphasizes licensing guidelines to promote openness, and it extends this to include expectations for OSI-approved licenses, which helps foster a more standardized approach to the release and use of AI technologies. </p><p>This alignment reinforces the principles of openness and encourages ethical AI development, where transparency is crucial for trust and accountability.</p><p>Component-Level Clarity </p><p>AI systems are composed of various elements, and both the OSAID and the MOF emphasize the need to evaluate openness at both the component level and the system/model as a whole. This approach allows for a more granular understanding of what is open and how each element can be used, modified, or integrated with others.</p><p>A clear and structured approach to component-level openness ensures that developers can interact with AI models in a flexible and informed manner, fostering a robust ecosystem for collaboration and innovation.</p><p>Modification and Reuse</p><p>The OSAID and the MOF view the ability to modify, adapt, and redistribute AI systems/models as fundamental to their openness. This flexibility supports many use cases, from academic research to commercial applications, while encouraging collaboration and innovation within the broader AI community. By ensuring that AI systems/models are modifiable and reusable, the OSAID and the MOF enable the continuous and open evolution of AI technologies, reducing technical debt and promoting the longevity and relevance of Open Source AI.</p><p>A Clear Alignment </p><p>These three principles form a critical foundation for the Open Source AI ecosystem. When these principles are agreed upon and consistently applied, they create a cohesive environment where AI systems and models can be openly developed, shared, and improved. The alignment between the OSAID and the MOF is a significant step in ensuring that AI remains accessible and transparent.</p><h2>OSAID and MOF: Where do they differ?</h2><p>There are areas where OSAID and the MOF differ, and it is important to state that this is <em>not</em> a conflict. I illustrate these areas in the table below for clarity of comparison.</p><figure><img data-media-urn="urn:li:digitalmediaAsset:D4D12AQHEz3sl20agaA" src="https://media.licdn.com/dms/image/v2/D4D12AQHEz3sl20agaA/article-inline_image-shrink_1500_2232/B4DZaDBcLbH4AU-/0/1745954916952?e=1784160000&amp;v=beta&amp;t=_avlYjujiWcCXXSG3YSjgE6CPzVgTXoVI793XFXND98"><figcaption></figcaption></figure><h2>The Complementary Relationship</h2><p>The differences discussed in the previous section between the OSAID and the MOF reflect their distinct but complementary purposes. While OSAID is focused on establishing a clear and principled definition of “Open Source AI,” the MOF provides a practical framework for evaluating and improving the openness of AI models over time and guides organizations to make incremental progress toward full openness.</p><p>Thus, the MOF serves as a bridge between aspiration and implementation. Organizations can use the OSAID to define their open source ambition, while the MOF helps assess their current position and set practical goals to move closer to that ambition.</p><figure><img data-media-urn="urn:li:digitalmediaAsset:D4D12AQENk_uliPiEdQ" src="https://media.licdn.com/dms/image/v2/D4D12AQENk_uliPiEdQ/article-inline_image-shrink_1000_1488/B4DZaDB9JXGwAU-/0/1745955051376?e=1784160000&amp;v=beta&amp;t=dIwQAfP8SF9znU5zlaNr1y1univgszHgiOsHyMWD1kw"><figcaption></figcaption></figure><p>For executives making strategic decisions, I would suggest following the following mindset:</p><ul><li><p>Use the OSAID to define your open source ambition: </p></li></ul><blockquote><p>The OSAID defines the target for where you want your AI systems or models to be.</p></blockquote><ul><li><p>Use the MOF to understand and communicate your current position: </p></li></ul><blockquote><p>The MOF gives you a starting point for assessing where your AI model stands in terms of openness and how to improve it over time.</p></blockquote><p>By aligning the OSAID and the MOF, organizations can set clear goals and measure their progress.</p><h2>Conclusion</h2><p>This post has provided a personal reflection on the alignment and divergence between the OSAID and the MOF. The goal has been to present a high-level mapping, offering insights into their strengths and roles in Open Source AI.</p><p>In Post 2, I will delve into the friction points between the OSAID and its practical application, and share my observations on the challenges that arise from these differences. In Post 3, I will offer additional reflections on adoption challenges and potential areas for refinement.</p><p>My intent is to contribute thoughtfully to the evolving conversation around open source AI. This effort stems from a personal interest and a desire to see Open Source AI continue to flourish. I welcome continued dialogue on this topic and hope these reflections can serve as useful input to all stakeholders working to shape the future of Open Source AI. </p><p>To provide feedback on OSAID,  please visit: <a href="https://discuss.opensource.org/" target="_blank">https://discuss.opensource.org/</a></p><p>To provide feedback on the MOF, please visit: <a href="https://isitopen.ai/" target="_blank">https://isitopen.ai/</a></p><hr><p></p></div>
+</body>
+</html>
